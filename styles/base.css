@@ -1,5 +1,64 @@
-h1{
-    background-color: blue;
+:root   {
+    --nav-background-color: black;
+    --nav-hover-background-color: rgba(255,255,255,0.2);
+
+    --font:'Roboto', sans-serif;
+    --font-principal-color: #EDEDED ;
+    
+    --heading-background-color: #4A4A4A;
+    --principal-background-color: #2D2D2D;
+}
+body    {
+    font-family: var(--font);
+    background-color: var(--principal-background-color);
+    /* color: var(--font-principal-color); */
+    
+}
+main{
+    
     text-align: center;
-    margin-right: 100px;
+    background-color: aquamarine;
+}
+h1{
+    border-bottom: 0.5px solid black;
+    display: inline-block;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: beige;
+    text-align: left;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.learning-activities h2, .information h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    margin: 0;
+    background-color: var(--heading-background-color);
+    color: var(--font-principal-color);
+    /* border-radius: 8px 8px 0 0 ; */
+    
+}
+
+/* Layout for small screens */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Layout for large screens */
+@media (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: 2fr 1fr;
+    }
 }
