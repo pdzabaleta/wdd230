@@ -1,0 +1,9 @@
+@media screen and (min-width: 500px) {
+   header {
+        background-color: rgba(132, 85, 176, 0.686);
+   } 
+   main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+}
