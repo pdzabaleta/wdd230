@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Sohne'; /* Nombre de la fuente */
+    src: url('fonts/sohne-font-family') format('opentype'); /* Ruta a la fuente */
+    /* Puedes agregar más estilos para diferentes pesos o estilos si tienes archivos adicionales de la fuente */
+}
+html {
+    background-color: #080808;
+    color: white;
+    font-family: 'Sohne', sans-serif;
+    margin: 0 auto;
+    /* padding: 0 auto; */
+    max-width: 90%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.8em;
+    line-height: 100%;
+    letter-spacing: -.02em;
+    font-weight: 400;
+    margin: 4% 0;
+    /* width: 100%; */
+}
+nav {
+	/* background-color: #36454f; */
+	margin: 0 auto;
+	max-width: 100% ;    
+}
+nav ul {
+	list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  
+    background-color:rgba(0, 0, 0, 0.231);
+    box-shadow: 0 0 20px rgba(0, 0,  0.131);
+}
+nav a {
+    display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+    font-size: .905rem;
+    line-height: 130%;
+    letter-spacing: .0025em;
+    font-weight: 400;
+}
+nav ul li {
+    flex: 1 1 100%;
+    
+}
+nav a:hover {
+    /* background-color: var(--nav-hover-background-color); */
+	text-decoration:underline;
+}
