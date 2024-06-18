@@ -10,11 +10,12 @@ html {
     margin: 0 auto;
     /* padding: 0 auto; */
     max-width: 90%;
+    /* scroll-behavior:smooth; */
 }
 
 header h1 {
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2.8rem;
     line-height: 100%;
     letter-spacing: -.02em;
     font-weight: 400;
@@ -52,4 +53,259 @@ nav ul li {
 nav a:hover {
     /* background-color: var(--nav-hover-background-color); */
 	text-decoration:underline;
+}
+.purpose {
+    background-color: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: auto; Asegura que las filas se ajusten al contenido */
+    border-radius: 6.74px;
+    overflow: hidden; 
+    margin: 15vw 0;
+    height: 400px;
+}
+.purpose img{
+    grid-column: 2 / 3;
+    width: 100%;
+    height: 100%; /* Mantiene la relación de aspecto */
+    display: block;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin distorsionarla */
+}
+
+.purpose-content {
+    grid-column: 1/2;
+    padding: 68px;
+}
+.purpose-content h2 {
+        font-size: 1.4175rem;
+        line-height: 130%;
+        letter-spacing: -.0026em;
+        font-weight: 400;
+        text-align: left;
+}
+.purpose-content p {
+    font-size: 1.125rem; /* 18px convertido a rem */
+    text-align: left;
+    line-height: 130%;
+    /* letter-spacing: -.0026em; */
+    font-weight: 400;
+}
+
+.scenarios {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 20vw 0;
+    display: grid;
+    grid-template-rows: min-content auto;
+    border-radius: 6.74px;
+    padding: 28px;
+
+
+}
+.scenarios-content h2{
+    text-align: center;
+    font-size: 1.4175rem;
+    /* line-height: 130%; */
+    letter-spacing: -.0026em;
+    font-weight: 400;
+}
+.scenarios-content p {
+    font-size: 1.125rem; /* 18px convertido a rem */
+    text-align: left;
+    line-height: 130%;
+    /* letter-spacing: -.0026em; */
+    font-weight: 400;
+    padding-left: 40px;
+}
+
+.scenarios ul{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.scenarios ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px; /* Ajustado el padding */
+    margin: 10px 30px; /* Ajustado el margen para evitar desbordamientos */
+    list-style-type: none;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: -0.0026em;
+    font-weight: 400;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 100%; /* Asegura que no se exceda el ancho del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding y border en el width y height */
+    height: 100%;
+}
+
+.color-sheme {
+    background-color: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 6.74px;
+    margin: 15vw 0;
+    height: 400px;
+    overflow: hidden;
+}
+.color-sheme h2 {
+    text-align: center;
+    font-size: 1.4175rem;
+    /* line-height: 130%; */
+    letter-spacing: -.0026em;
+    font-weight: 400;
+    align-self: center;
+}
+
+
+.colors {
+    display: flex;
+    grid-column: 2 / 3;
+    /* flex-direction: row; */
+    align-items: center;
+    /* height: 100%; */
+}
+
+.color {
+    width: calc(50% - 10px);
+    /* padding: 20px; */
+    /* border-radius: 6px; */
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.name {
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+    /* display: block; */
+    align-content: center;
+    color: white;
+    /* background-color: black; */
+    /* -webkit-text-stroke: 1px black; */
+    /* text-stroke: 4px black; */
+    font-size: 1.4175rem;
+    /* text-align: left; */
+    line-height: 130%;
+    letter-spacing: -.0026em;
+    font-weight: 400;
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(0, 0,  0.131);
+}
+
+.rgb {
+    color: white;
+    font-size: 14px;
+    /* background-color: black; */
+    padding: 5px;
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgba(0, 0,  0.131);
+    /* align-content: center; */
+
+}
+
+
+.typography {
+    background-color: rgba(255, 255, 255, 0.05);
+    margin: 20vw 0;
+    display: grid;
+    grid-template-rows: min-content auto;
+    border-radius: 6.74px;
+    padding: 28px;
+
+
+}
+.typography h2{
+    text-align: center;
+    font-size: 1.4175rem;
+    /* line-height: 130%; */
+    letter-spacing: -.0026em;
+    font-weight: 400;
+}
+
+.typography ul{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.typography ul li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px; 
+    margin: 10px 30px; /* Ajustado el margen para evitar desbordamientos */
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.4175rem;
+    font-weight: 400;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    max-width: 100%; /* Asegura que no se exceda el ancho del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding y border en el width y height */
+    height: 100%;
+}
+
+
+.typography-eg-h1 {
+    color: #fff;
+    text-align: justify;
+    font-size: 2.8rem;
+    margin: 10px 0;
+    font-weight: 400;
+    }
+.typography-eg-h2{
+    text-align: justify;
+    font-size: 1.4175rem; 
+    margin: 10px 0;
+    font-weight: 400;
+}
+.typography-eg-nav {
+    text-align: justify;
+    font-size: 0.905rem; 
+    margin: 10px 0;
+    font-weight: 400;
+}
+.typography-eg-p,
+.typography ul li span{
+    text-align: justify;
+    font-size: 1.125rem; 
+    margin: 10px 0;
+    font-weight: 400;
+    line-height: 150%
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilos para el nombre con el copyright */
+footer .copyright {
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el enlace del wireframe */
+footer .link {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+::selection {
+    background-color: white; /* Fondo blanco para el texto seleccionado */
+    color: black; /* Texto negro para el texto seleccionado */
 }
