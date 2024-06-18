@@ -302,7 +302,7 @@ footer .copyright {
 
 /* Estilos para el enlace del wireframe */
 footer .link {
-    color: #007bff; /* Color del enlace */
+    color: #409cff; /* Color del enlace */
     text-decoration: none; /* Elimina el subrayado del enlace */
 }
 ::selection {
