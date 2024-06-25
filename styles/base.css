@@ -1,15 +1,16 @@
-:root   {
+:root {
     --nav-background-color: black;
-    --nav-hover-background-color: rgba(255,255,255,0.2);
+    --nav-hover-background-color: rgba(255, 255, 255, 0.2);
 
-    --font:'Roboto', sans-serif;
-    --font-principal-color: #EDEDED ;
-    --font-heading:#2e2e2e;
-    
+    --font: 'Roboto', sans-serif;
+    --font-principal-color: #EDEDED;
+    --font-heading: #2e2e2e;
+
     --heading-background-color: #4a4a4a;
     --footer-heading-background-color: #bbb;
     --principal-background-color: white;
 }
+
 /* Layout for small screens */
 @media (max-width: 768px) {
     .grid-container {
@@ -17,67 +18,113 @@
     }
 }
 
-body    {
+body {
     font-family: var(--font);
     background-color: var(--principal-background-color);
     margin: 0 auto;
+    transition: background-color 0.3s ease;
 }
 
-main{
+main {
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
     flex: 1;
 }
-h1{
+
+h1 {
     border-bottom: 0.5px solid black;
     margin: 1vw;
     text-align: left;
 }
 
 header {
-	background-color: var(--footer-heading-background-color);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--footer-heading-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     color: var(--font-heading);
     font-size: 2rem;
     font-weight: bold;
+    position: relative;
+    transition: background-color 0.3s ease;
 }
+
+#darkBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    width: 44px;
+    /* border: none ; */
+    /* background-color: none; */
+    box-shadow: none;
+    cursor: pointer;
+}
+
 header img {
     width: 15vb;
     height: auto;
-    box-shadow: 1px 2px 16px 3px rgba(0,0,0,0.4);
+    box-shadow: 1px 2px 16px 3px rgba(0, 0, 0, 0.4);
     margin-right: 5vw;
     border-radius: 3px;
 }
+
 nav {
-	background-color: #36454f;
-	margin: 0 auto;
-	max-width: 100% ;    
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 100%;
 }
+
 nav ul {
-	list-style-type: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
+    display: none;
 }
+
 nav a {
     display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
     font-size: 1.2em;
 }
 
 nav a:hover {
     background-color: var(--nav-hover-background-color);
-	text-decoration:underline;
+    text-decoration: underline;
 }
 
+#myButton::before {
+    content: "=";
+}
 
+#myButton.open::before {
+    content: "x";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+/* css menu open */
+
+ul.menuLinks.open {
+    display: block;
+}
+
+/* /////////////////// */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -89,12 +136,12 @@ nav a:hover {
 
 .card {
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: 1px 2px 16px 3px rgba(0,0,0,0.4);
+    box-shadow: 1px 2px 16px 3px rgba(0, 0, 0, 0.4);
 }
 
-.learning-activities h2, .information h2 {
+.learning-activities h2,
+.information h2 {
     text-align: center;
     padding: 10px 0;
     font-size: 1.2em;
@@ -102,19 +149,48 @@ nav a:hover {
     background-color: var(--heading-background-color);
     color: var(--font-principal-color);
 }
+
 footer {
     background-color: var(--footer-heading-background-color);
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    transition: background-color 0.3s ease;
+
 }
-footer p{
+
+footer p {
     margin: 0;
     font-weight: bolder;
     color: var(--font-heading);
 }
+
 footer img {
     width: 3vw;
     height: auto;
 }
+/* css for dark mode */
+body.dark {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.card.dark {
+    box-shadow: 1px 2px 16px 3px rgba(255, 255, 255, 0.4);
+}
+header.dark {
+    background-color:#1b1b1bc4; 
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+footer.dark {
+    background-color: #1b1b1bc4;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+footer.dark p {
+    color: #ffffff; /* Ajusta el color del texto para que sea visible */
+}
+/* ///////////////////// */
 

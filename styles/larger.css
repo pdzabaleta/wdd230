@@ -12,9 +12,15 @@
 		display: flex;      
  
 	}
+
 	nav ul li {
 		flex: 1 1 100%;
 	}
+
+    /* css for menu  */
+    #myButton {
+        display: none;
+    }
     footer {
         position:fixed;
         left: 0;
