@@ -139,7 +139,10 @@ ul.menuLinks.open {
     overflow: hidden;
     box-shadow: 1px 2px 16px 3px rgba(0, 0, 0, 0.4);
 }
-
+.card ul li a {
+    text-decoration: underline;
+    color: black;
+}
 .learning-activities h2,
 .information h2 {
     text-align: center;
@@ -178,6 +181,11 @@ body.dark {
 
 .card.dark {
     box-shadow: 1px 2px 16px 3px rgba(255, 255, 255, 0.4);
+}
+.card.dark ul li a{
+    text-decoration: underline;
+    color: #ffffff;
+    display: flex;
 }
 header.dark {
     background-color:#1b1b1bc4; 
