@@ -25,7 +25,8 @@ header h1 {
 nav {
 	/* background-color: #36454f; */
 	margin: 0 auto;
-	max-width: 100% ;    
+	max-width: 100% ;   
+     
 }
 nav ul {
 	list-style-type: none;
@@ -33,7 +34,7 @@ nav ul {
     margin: 0;
     display: flex;  
     background-color:rgba(0, 0, 0, 0.231);
-    box-shadow: 0 0 20px rgba(0, 0,  0.131);
+    /* box-shadow: 0 0 20px rgba(0, 0,  0.131); */
 }
 nav a {
     display: block;
