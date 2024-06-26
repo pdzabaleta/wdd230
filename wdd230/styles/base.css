@@ -88,3 +88,12 @@ nav a:hover {
 .search button img {
     padding-left: 5px; /* Ajusta el valor según la distancia deseada */
 }
+main {
+    width: 100%;
+    background-color: aqua;
+}
+.principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
