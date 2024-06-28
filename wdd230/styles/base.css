@@ -13,7 +13,7 @@ body {
     background-color: white;
     font-family: 'Sohne', sans-serif;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 68rem;
 }
 header {
     display: flex;
@@ -90,10 +90,124 @@ nav a:hover {
 }
 main {
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
+}
+.principal {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    position: relative;
+}
+.principal img:hover {
+    transform: scale(1.01); /* Ajusta el valor para un mayor o menor acercamiento */
+    box-shadow: 0px 44px 41px 13px rgba(230, 189, 217, 0.761);
+
 }
 .principal img {
-    width: 100%;
+    width: 110%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.9s ease, box-shadow 0.9s ease;
+
 }
+.principal-text {
+    position: absolute;
+    /* background-color: beige;  */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.principal-text h1 {
+    font-size: 2.8rem;
+    line-height: 100%;
+    letter-spacing: -.02em;
+    font-weight: 400;
+}
+.principal-text p {
+    font-size: 1.125rem; 
+    font-weight: 400;
+    line-height: 150%;
+    text-align: justify;
+}
+.principal-text button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #d2d2d2; 
+    border-radius: 20px;
+    cursor: pointer;
+  
+}
+
+
+
+
+
+
+
+
+
+
+.carousel-section {
+    padding: 20px; /* Ajusta según sea necesario */
+    background-color: #f9f9f9; /* Ajusta según sea necesario */
+}
+
+.carousel-container {
+    width: 100%; /* Ajusta según sea necesario */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Para un desplazamiento suave en dispositivos móviles */
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 700px; /* Ajusta el ancho de las tarjetas según sea necesario */
+    margin-right: 10px; /* Espaciado entre las tarjetas */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+}
+
+/* Opcional: estilo para ocultar el scrollbar */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
