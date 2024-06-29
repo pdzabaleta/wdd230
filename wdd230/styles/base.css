@@ -13,10 +13,11 @@
 body {
     background-color: white;
     font-family: 'Sohne', sans-serif;
-    margin: 0 auto;
-    max-width: 68rem;
-    /* overflow: hidden; */
 
+}
+.width {
+    max-width: 68rem;
+    margin: 0 auto;
 }
 header {
     display: flex;
@@ -100,7 +101,7 @@ main {
     padding-top: 5px;
     justify-content: center;
     position: relative;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* z-index: 1; */
 }
 .principal img:hover {
@@ -151,28 +152,32 @@ main {
 
 
 
-
+.separation {
+    
+    position: relative  ;
+    /* background-color: bisque; */
+    height: 700px;
+    width: 100%; 
+}
 
 
 .carousel-section {
-    background-color: aqua;
-    margin-top: 10px;
+    /* background-color: aqua; */
+    margin-top: 40px;
     width: 100%;
-    position: absolute;
-    left: 0;
+    position:absolute;
     padding: 20px 0 0 40px;
-    z-index: 2;
 }
 .carousel-button {
     display: flex;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     justify-content: space-between;
     width: 68rem;
     margin: 0 auto;
 }  
 .carousel-container {
     width: 100%;/* Ajusta según sea necesario */
-    background-color: blue;
+    /* background-color: blue; */
     margin: 0 auto;  
     margin-right: 0;
 }
@@ -245,7 +250,9 @@ main {
         
 }
 
+.rating {
 
+}
 
 
 
