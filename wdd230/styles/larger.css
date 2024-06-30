@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    .weather {
+        /* background-color: aqua; */
+        /* width: 100%; */
+        /* grid-template-columns: 1fr 1fr; */
+    }
+    .event-section {
+        grid-template-columns: 1fr 2fr;
+    }
+}
