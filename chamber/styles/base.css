@@ -15,12 +15,9 @@ body {
     background-color: white;
     font-family: 'Sohne', sans-serif;
     width: 100%;
-    /* height: 100%; */
-   
 }
 .width {
     max-width: 90vw;
-    
     margin: 0 auto;
 }
 header {
@@ -28,7 +25,6 @@ header {
     justify-content: space-between; 
     width: 100%;
     height: 8vh;
-    /* background-color: rgba(241, 240, 240, 0.773); */
     position: relative;
     align-items: center;
 }
@@ -59,20 +55,15 @@ nav a:hover {
 }
 .search {
     display: none;
-    /* background-color: yellow; */
 }
 .search input {
     position: relative;
-    /* background-color: white;  pude que tenga que modificarlo para el dark mode*/
     height: 100%;
     width: 15vw;
     border-radius: 20px;
     border: 1px solid #d2d2d2;
     padding: 0 16px;
     line-height: 40px;
-    /* background-color: aqua; */
-    
-    
 } 
 .search button {
     position: absolute;
@@ -84,7 +75,6 @@ nav a:hover {
     top: 50%;
     right: 10%; /* Ajusta la distancia del borde derecho según sea necesario */
     transform: translateY(-50%);
-    /* background-color: blanchedalmond; */
 }
 .search button img {
     padding-left: 5px; /* Ajusta el valor según la distancia deseada */
@@ -150,7 +140,6 @@ nav a:hover {
 
 .principal {
     display: flex;
-    /* padding: 30px; */
     justify-content: center;
     position: relative;
     background-color: aqua;
@@ -176,9 +165,7 @@ nav a:hover {
 
 }
 .principal-text {
-    /* display: none; */
     position: absolute;
-    /* background-color: beige;  */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -190,6 +177,7 @@ nav a:hover {
     line-height: 100%;
     letter-spacing: -.02em;
     font-weight: 400;
+    
 }
 .principal-text p {
     font-size: 1.125rem; 
@@ -203,59 +191,45 @@ nav a:hover {
     background-color: #d2d2d2; 
     border-radius: 20px;
     cursor: pointer;
+    font-size: 1.125rem; 
+    font-weight: 500;
+    line-height: 150%
   
 }
 
-
-
-
-
-
-
 .separation {
-    /* display: block; */
     position: relative;
-    /* background-color: bisque; */
-    /* height: fit-content; */
-    /* width: 100%;  */
-    /* z-index: 1; */
-    /* background-color: aqua; */
-
     display: flex;
-        flex-direction: column;
-        /* margin-top: 10px; */
+    flex-direction: column;
 }
 
 .top {
     margin-top: 12vh;
 }
 .carousel-section {
-    /* background-color: aqua; */
-    /* margin-top: 40px; */
-    /* width: 100%; */
-    /* height: 566px; */
     position:relative;
     padding: 0 0 0 40px;
-    /* z-index: 2; */
     top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .carousel-button {
     display: flex;
-    /* background-color: blueviolet; */
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90vw;
     height: 8vh;
-    /* margin: 0 0 1rem 0; */
+    margin: 0 auto;
     
 }  
+.carousel-button h2 {
+    font-size: 1.4175rem; 
+    font-weight: 400;
+}
 .carousel-container {
     width: 100%;/* Ajusta según sea necesario */
-    /* background-color: blue; */
     margin: 0 auto;  
     margin-right: 0;
 }
@@ -276,10 +250,8 @@ nav a:hover {
     height: 470px; /* Ajusta el ancho de las tarjetas según sea necesario */
     width: 353px;
     margin-right: 10px; /* Espaciado entre las tarjetas */
-    /* background-color: hotpink; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid black; */
     scroll-snap-align: start; /*no se para que es*/
     overflow: hidden;
     position: relative; 
@@ -304,17 +276,21 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    pointer-events: none; /* Permitir que los eventos del mouse pasen a través del contenedor */
+    pointer-events: none; 
     padding: 12px;
     right: 0;
     left: 0;
     font-size: 1.125rem;
-    color: white; 
-    font-weight: 400;
+    font-weight: 500;
 }
 .card-definition h3 {
+    color: white;
     font-size: 1.125rem; /* Ajusta el tamaño de fuente según sea necesario */
-    font-weight: 400; /* Ajusta el peso de la fuente según sea necesario */
+    font-weight: 500; /* Ajusta el peso de la fuente según sea necesario */
+}
+.card-definition p {
+    color: white;
+
 }
 .card img:hover {
     transform: scale(1.05); /* Zoom al pasar el mouse */
@@ -331,7 +307,6 @@ nav a:hover {
 
 .prev, .next,
 .prevS, .nextS  {
-    /* background-color: rgba(0, 0, 0, 0.5); */
     color: black;
     border: none;
     padding: 10px;
@@ -343,28 +318,27 @@ nav a:hover {
 
 
 .rating-definition {
-    color: #080808;
     align-items: center;
-    pointer-events:auto;
 }
 .rating-definition p {
     text-align: justify;
     font-size: 1.125rem; 
     font-weight: 400;
-    line-height: 150%
+    line-height: 150%;
+    color: #282828;
 }
 .rating-definition h3 {
     align-self: center;
     font-size: 1.4175rem; 
-    /* margin: 10px 0; */
     font-weight: 400;
+    color: #000000;
     
 }
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: blue;
+    text-decoration: underline;
 }
 .checked {
     color: orange;
@@ -387,13 +361,10 @@ footer p {
     color: black;
 }
 .event-section {
-    /* background-color: aquamarine; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     margin: 12vh auto;
-    /* width: 100%; */
-    
 }
 
 .weather h3{
@@ -403,43 +374,30 @@ footer p {
 }
 .weather-widget div {
     border-radius: 8px;
-    /* height: 900px; */
 }
 .event {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     padding: 0 12px ;
     background-color: rgba(0, 0, 0, 0.106);
     border-radius: 8px;
-    /* position: relative; */
-
-    /* justify-content: space-between; */
 }
 .event h3 {
     font-size: 1.4175rem; 
     margin: 10px 0;
     font-weight: 400;
-    /* position: absolute; */
     top: 0;
-    /* z-index: 1; */
-    /* left: 0; */
 }
 .event-widget p {
     border-top: 1px solid rgb(99, 99, 99);
     margin-top: 5px;
 }
 .event-widget {
-    /* background-color: beige; */
     text-align: justify;
     font-size: 1.125rem; 
     font-weight: 400;
     line-height: 150%;
     height: 100%;
-    /* justify-self: baseline; */
-    /* position: relative; */
-    /* z-index: -1; */
 }
 .event-widget p span {
     font-weight: 300;
