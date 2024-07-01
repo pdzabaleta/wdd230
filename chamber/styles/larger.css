@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+    .weather {
+        /* background-color: aqua; */
+        /* width: 100%; */
+        /* grid-template-columns: 1fr 1fr; */
+    }
+    .event-section {
+        grid-template-columns: 1fr 2fr;
+    }
+    .carousel-group {
+    display: flex;
+    margin-right: 10px;
+    }
+
+
+    .search {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+    width: fit-content;
+    height: 40px;
+    border-radius: 20px;
+}
+
+
+nav {
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    z-index: 3;
+}
+
+
+
+
+#menu {
+    display: none; /* Hide hamburger button on larger screens */
+}
+
+.principal {
+    height: 60vh;
+    margin: 12vh auto;
+    
+}
+.principal img {
+    height: 60vh;
+}
+
+
+}
