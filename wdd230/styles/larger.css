@@ -7,4 +7,31 @@
     .event-section {
         grid-template-columns: 1fr 2fr;
     }
+    .carousel-group {
+    display: flex;
+    margin-right: 10px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+    }
+    .navigation.open {
+        display: flex; /* Ensure navigation remains visible when open */
+    }
+    
+    .search {
+    display: block;
+    position: relative;
+    margin-right: 10px;
+    width: fit-content;
+    height: 40px;
+    border-radius: 20px;
+}
+    #menu {
+        display: none;
+    }
 }
