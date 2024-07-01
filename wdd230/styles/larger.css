@@ -11,18 +11,8 @@
     display: flex;
     margin-right: 10px;
     }
-    nav {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        height: 50px;
-    }
-    .navigation.open {
-        display: flex; /* Ensure navigation remains visible when open */
-    }
-    
+
+
     .search {
     display: block;
     position: relative;
@@ -31,7 +21,28 @@
     height: 40px;
     border-radius: 20px;
 }
-    #menu {
-        display: none;
-    }
+
+
+nav {
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    z-index: 3;
+}
+
+
+
+
+#menu {
+    display: none; /* Hide hamburger button on larger screens */
+}
+
+
+
+
+
 }

@@ -32,10 +32,7 @@ header {
     position: relative;
     align-items: center;
 }
-nav {
-    display: none;
-    background-color: blue;
-}
+
 nav ul {
 	list-style-type: none;
     display: flex;
@@ -93,20 +90,60 @@ nav a:hover {
     padding-left: 5px; /* Ajusta el valor según la distancia deseada */
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-.navigation {
-    display: none; /* Hide navigation by default */
-    list-style: none;
-    background-color: #333;
-    color: #fff;
-    padding: 0;
-    position: absolute;
-    top: 4.5rem; /* Adjust as needed */
-    right: 1rem; /* Adjust as needed */
-    z-index: 1000; /* Ensure navigation appears above other content */
-}
-
-.navigation.open {
-    display: block; /* Show navigation when open class is applied */
+@media (max-width: 768px) {
+    .navigation {
+        display: block; 
+        max-height: 0; /* Start with 0 height */
+        overflow: hidden; /* Hide overflow */
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.265);
+        position: absolute;
+        top: 4rem; 
+        right: 0;
+        left: 0;
+        z-index: 10; 
+        transition: max-height 0.3s ease; /* Transition for max-height */
+    }
+    
+    .navigation.open {
+        max-height: 200px; /* Adjust height to fit your content */
+    }
+    
+    .navigation li {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .navigation a {
+        padding: 10px 0;
+        text-decoration: underline;
+        /* background-color: aqua; */
+    }
+    
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 5; 
+    }
+    
+    #menu::before {
+        content: "☰";
+    }
+    
+    #menu.open::before {
+        content: "x";
+    }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -138,6 +175,7 @@ main {
 
 }
 .principal-text {
+    display: none;
     position: absolute;
     /* background-color: beige;  */
     top: 50%;
@@ -352,18 +390,7 @@ footer p {
     /* width: 100%; */
     
 }
-.weather {
-    /* background-color: blue; */
-    /* margin: 0; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 
-    /* width: 100%; */
-    /* margin: 0 auto; */
-    
-}
-.weather-widget {
-    /* margin-top: 10px;     */
-}
 .weather h3{
     font-size: 1.4175rem; 
     margin: 10px 0;
