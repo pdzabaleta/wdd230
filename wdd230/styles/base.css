@@ -150,13 +150,14 @@ nav a:hover {
 
 .principal {
     display: flex;
-    padding: 0;
+    /* padding: 30px; */
     justify-content: center;
     position: relative;
     background-color: aqua;
-    /* z-index: 1; */
-    margin: 0 auto;
-    height: 70vh;
+    height: 60vh;
+    width: 90vw;
+    margin: 12vh auto;
+    z-index: 1; 
 }
 .principal img:hover {
     transform: scale(1.01); /* Ajusta el valor para un mayor o menor acercamiento */
@@ -171,6 +172,7 @@ nav a:hover {
     top: 0;
     transition: transform 0.9s ease, box-shadow 0.9s ease;
     z-index: 1;
+    object-fit: cover;
 
 }
 .principal-text {

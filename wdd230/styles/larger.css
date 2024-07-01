@@ -41,17 +41,7 @@ nav {
     display: none; /* Hide hamburger button on larger screens */
 }
 
-.principal {
-    display: flex;
-    /* padding: 30px; */
-    justify-content: center;
-    position: relative;
-    background-color: aqua;
-    height: 60vh;
-    width: 90vw;
-    margin: 12vh auto;
-    z-index: 1; 
-}
+
  
 
 
