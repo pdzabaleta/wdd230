@@ -154,9 +154,9 @@ nav a:hover {
     justify-content: center;
     position: relative;
     background-color: aqua;
-    height: 60vh;
+    height: 72vh;
     width: 90vw;
-    margin: 12vh auto;
+    margin: 6vh auto;
     z-index: 1; 
 }
 .principal img:hover {
@@ -166,7 +166,7 @@ nav a:hover {
 }
 .principal img {
     width: 95vw;
-    height: 60vh;
+    height: 72vh;
     border-radius: 8px;
     position: absolute;
     top: 0;
@@ -215,7 +215,7 @@ nav a:hover {
 .separation {
     /* display: block; */
     position: relative;
-    background-color: bisque;
+    /* background-color: bisque; */
     /* height: fit-content; */
     /* width: 100%;  */
     /* z-index: 1; */

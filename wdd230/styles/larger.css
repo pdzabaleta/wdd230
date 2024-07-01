@@ -41,8 +41,14 @@ nav {
     display: none; /* Hide hamburger button on larger screens */
 }
 
-
- 
+.principal {
+    height: 60vh;
+    margin: 12vh auto;
+    
+}
+.principal img {
+    height: 60vh;
+}
 
 
 }
