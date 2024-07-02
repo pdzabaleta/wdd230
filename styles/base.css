@@ -50,6 +50,7 @@ header {
     font-weight: bold;
     position: relative;
     transition: background-color 0.3s ease;
+    z-index: 1;
 }
 
 #darkBtn {
@@ -62,10 +63,11 @@ header {
     /* background-color: none; */
     box-shadow: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 header img {
-    width: 15vb;
+    width: 15vh;
     height: auto;
     box-shadow: 1px 2px 16px 3px rgba(0, 0, 0, 0.4);
     margin-right: 5vw;
@@ -75,7 +77,7 @@ header img {
 nav {
     background-color: #36454f;
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 nav ul {
@@ -131,7 +133,7 @@ ul.menuLinks.open {
     gap: 20px;
     padding: 10px;
     text-align: left;
-    margin-top: 2vw;
+    margin-top: 2vh;
 }
 
 .card {
