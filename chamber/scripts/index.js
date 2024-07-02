@@ -26,9 +26,9 @@ function getCurrentYear() {
 function getLastModified() {
     return document.lastModified;
 }
-
 document.getElementById('year').textContent = getCurrentYear();
 document.getElementById('lastModified').textContent = getLastModified();
+
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -36,3 +36,4 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
