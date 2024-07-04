@@ -29,15 +29,55 @@ main {
     max-width: 80%;
     text-align: center;
     margin: 0 auto;
-    flex: 1;
+    /* flex: 1; */
 }
 
+.hero {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+.hero img { 
+    width: 100%;
+    height: auto;
+}
+.herolabel {
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: 1000;
+    top: 5vh; /* Adjust as needed */
+    left: 5vw; /* Adjust as needed */
+    white-space: nowrap;
+    padding: 10px ;
+    border-radius: 8px;
+    background: radial-gradient(#080808, #4D5B97);
+}
+.herolabel p {
+    margin: 0;
+    font-size: 2.5vw;
+
+    color: white;
+}
+
+  
+  @media (min-width: 960px) {
+    .herolabel {
+      font-size: 1.5vw; 
+    }
+  }
+  @media (max-width: 400px) {
+    .herolabel {
+      font-size: 1vw; 
+    }
+  }
 h1 {
     border-bottom: 0.5px solid black;
     margin: 1vw;
     text-align: left;
 }
-
 header {
     background-color: var(--footer-heading-background-color);
     display: flex;
@@ -145,6 +185,9 @@ ul.menuLinks.open {
     text-decoration: underline;
     color: black;
 }
+.information {
+    text-align: center;
+}
 .learning-activities h2,
 .information h2 {
     text-align: center;
@@ -153,6 +196,10 @@ ul.menuLinks.open {
     margin: 0;
     background-color: var(--heading-background-color);
     color: var(--font-principal-color);
+}
+iframe {
+    margin: 5vh auto;
+    width: 100%;
 }
 
 footer {
@@ -204,3 +251,6 @@ footer.dark p {
 }
 /* ///////////////////// */
 
+.visits {
+    font-weight: bold;
+}

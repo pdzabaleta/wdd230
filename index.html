@@ -47,7 +47,17 @@
 
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
-
+        <div class="hero">
+            <picture>
+              <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+              <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+              <img src="images/hero-large.webp" alt="temple lds" width="50" height="25">
+            </picture>
+            <div class="herolabel">
+              <p>Salt Lake Temple</p>
+            </div>
+          </div>
+          
         <div class="grid-container">
             <section class="card learning-activities">
                 <h2>Learning Activities</h2>
@@ -68,7 +78,7 @@
                     <li><a href="week03/images/landscape.webp">Landscape</a></li>
                     <li><a href="week03/lazyload.html">Lazyload</a></li>
                     <li><a href="week03/responsive-images.html">Responsive Images</a></li>
-                    <li><a href="week03/bom.html"></a>Bom localStorage</li>
+                    <li><a href="week03/bom.html">Bom localStorage</a></li>
                     
                 </ul>
             </section>
@@ -76,13 +86,15 @@
             <section class="card information">
                 <h2>Information</h2>
                 <p>Weather: <span id="weather">Placeholder for weather information</span></p>
-                <p>Number of visits: <span id="visits">Placeholder for visit count</span></p>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
                 <!-- Puedes añadir más información aquí -->
             </section>
         </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d102197.99195164719!2d-73.1154464186383!3d-36.826013671281395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1720059989327!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </main>
     <footer>
-        <p>©<span id="year"></span> Pablo Zabaleta, Chile <img src="images/chile-flag.png" alt="Chilean flag" width="50" height="40"></p>
+        <p>©<span id="year"></span> Pablo Zabaleta, Chile <img src="images/chile-flag.webp" alt="Chilean flag" width="50" height="40"></p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>

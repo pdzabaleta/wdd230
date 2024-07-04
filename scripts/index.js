@@ -22,3 +22,20 @@ myBtn.addEventListener('click', () => {
     header.classList.toggle('dark');
     footer.classList.toggle('dark');
 });
+
+// visit counter
+const visitsDisplay = document.querySelector(".visits");
+let numVisits = Number(window.localStorage.getItem("user-visit-count")) || 0;
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+  } else {
+    visitsDisplay.textContent = "This is your firts visit!!!";
+  }
+
+numVisits++;
+
+localStorage.setItem("user-visit-count", numVisits);
+
+
+
+  
