@@ -124,7 +124,7 @@ nav a:hover {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        z-index: 5; 
+        /* z-index: 5;  */
     }
     
     #menu::before {
@@ -352,22 +352,7 @@ nav a:hover {
     color:  black;
   }
 
-  footer {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    transition: background-color 0.3s ease;
-    display: flex;
-    justify-content:center;
 
-}
-
-footer p {
-    margin: 10px;
-
-    font-weight: bolder;
-    color: black;
-}
 .event-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -476,5 +461,62 @@ footer p {
         font-weight: 400;
         color: #000000;
         
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center; */
+
+}
+
+footer p {
+    margin: 10px;
+
+    font-weight: bolder;
+    color: black;
+}
+/* Estilos generales para el footer */
+
+
+.footer-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .footer-extra {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-info {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .footer-logo, .footer-info {
+        margin: 10px 20px;
     }
 }
