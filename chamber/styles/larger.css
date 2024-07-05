@@ -51,6 +51,16 @@ nav {
 .principal-text p {
     display: block;
 }
+/* ///////////////////////////////////////////////////////DISCOVER.HTML//////////////////////////////////////////////////////////////// */
 
+.container {
+
+    grid-template-columns: 2fr 1fr;
+
+
+}
+.container h1 {
+    grid-column: 1/3;
+}
 
 }
