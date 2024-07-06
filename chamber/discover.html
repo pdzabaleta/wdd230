@@ -24,6 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- calendar -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css'/>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -57,12 +59,20 @@
         <div class="container">
             <h1>Discover</h1>
             <aside class="sidebar">
-                <div class="visit-message" id="visitMessage"></div>
-                <div id="top_x_div" style="width: 500px; height: 200px;"></div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1506160.040534153!2d-72.05841499795233!3d-36.889940736168924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1720150741624!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <!-- Información demográfica, estadísticas, eventos, atracciones, etc. -->
-                <h2>Estadísticas del Área</h2>
-                <p>Información demográfica y otros datos relevantes.</p>
+                
+                <div class="chart-div">
+                    <canvas id="myChart"></canvas>
+                </div>
+
+                <div id='calendar'></div>
+
+                <div class="localStorage">
+                    <div id="visitMessage"></div>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1506160.040534153!2d-72.05841499795233!3d-36.889940736168924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1720150741624!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                
             </aside>
             <section class="main-content">
                 <h2>Imágenes Locales</h2>
@@ -93,7 +103,8 @@
         <p id="lastModified"></p>
     </footer>
     
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
     <script src="scripts/discover.js"></script>
     
     

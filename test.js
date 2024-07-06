@@ -1,33 +1,25 @@
-google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawStuff);
+document.addEventListener('DOMContentLoaded', () => {
+  const visitMessage = document.getElementById('visitMessage');
+  const lastVisitKey = 'lastVisit';
+  const lastVisit = localStorage.getItem(lastVisitKey);
+  const currentVisit = new Date();
 
-function drawStuff() {
-var data = google.visualization.arrayToDataTable([
-['Category', 'Amount'],
-['Membership Registrations', 1200],
-['Business Listings', 950],
-['Events Organized', 780],
-['Networking Meetings', 620],
-['Training Workshops', 550],
-['Community Outreach Programs', 480],
-['Partnerships Established', 420],
-['Job Placements', 360],
-['Publications Released', 300],
-['Volunteer Engagements', 250]
-]);
+  if (!lastVisit) {
+      visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+  } else {
+      const lastVisitDate = new Date(lastVisit);
+      const timeDifference = currentVisit - lastVisitDate;
+      const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
-  var options = {
-    width: 400,
-    legend: { position: 'none' },
-    chart: {
-      title: 'Top 10 Achievements by Category',
-      subtitle: 'Ranked from most to Fewest' },
+      if (timeDifference < 24 * 60 * 60 * 1000) {
+          visitMessage.textContent = "Back so soon! Awesome!";
+      } else if (daysDifference === 1) {
+          visitMessage.textContent = `You last visited 1 day ago.`;
+      } else {
+          visitMessage.textContent = `You last visited ${daysDifference} days ago.`;
+      }
+  }
 
-    
-    bar: { groupWidth: "90%" }
-  };
+  localStorage.setItem(lastVisitKey, currentVisit.toISOString());
+});
 
-  var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-  // Convert the Classic options to Material options.
-  chart.draw(data, google.charts.Bar.convertOptions(options));
-};
