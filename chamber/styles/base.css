@@ -524,12 +524,13 @@ main {
 
 }
 .container {
-    background-color: #b70909;
+    /* background-color: #b70909; */
     width: 100%;
     margin: 12vh auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+
 
 
 }
@@ -544,9 +545,61 @@ main {
 /* /////////////////SIDEBAR////////////////////////// */
 .sidebar {
     order: 2;
-    background-color: aqua;
+    /* background-color: aqua; */
+    display: grid;
+    gap: 20px;
+
 
 }
+.chart-div {
+    background-color: rgba(0, 0, 0, 0.123);
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+}
+#myChart {
+    width: 100%;
+    height: 100%;
+    
+}
+#calendar {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+#calendar h2 { 
+    font-size: 1rem;
+    white-space: nowrap;}
+.calendar-div h3{
+    text-decoration: underline;
+    font-size: 1.5rem; 
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.localStorage {
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#visitMessage {
+    font-size: 1.4175rem; 
+    font-weight: 400;
+
+}
+iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
 
 /* /////////////////SIDEBAR////////////////////////// */
 .main-content {
@@ -556,31 +609,5 @@ main {
 .image-gallery {
     display: grid;
 }
-.chart-div {
-    background-color: antiquewhite;
-    width: 100%;
-    height: fit-content;
 
-}
-#myChart {
-    width: 100%;
-    /* height: auto; */
-}
-#calendar {
-    width: 100%;
-    margin: 0 auto;
-    font-weight: 800;
-
-
-}
-.localStorage {
-    background-color: yellow;
-    /* height: 400px; */
-    padding: 20px;
-    /* background: #f4f4f4; */
-    width: 100%;
-}
-iframe {
-    width: 100%;
-}
 

@@ -3,20 +3,14 @@ const ctx = document.getElementById('myChart');
   new Chart(ctx, {
     type: 'bar',
     data : {
-      labels: ['Membership Registrations', 'Business Listings', 'Events Organized', 'Networking Meetings', 'Training Workshops', 'Community Outreach Programs'],
+      labels: ['Registrations', 'Listings', 'Events', 'Networking', 'Training', 'Community'],
       datasets: [{
         label: 'Top 6 Achievements by Category',
         data: [1200, 950, 780, 620, 550, 480],
         borderWidth: 1,
       }]
     },
-    options: {
-      scales: {
-        y: {
-        //   beginAtZero: true
-        }
-      }
-    }
+    
   });
 
   document.addEventListener('DOMContentLoaded', function() {
