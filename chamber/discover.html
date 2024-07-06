@@ -59,7 +59,9 @@
         <div class="container">
             <h1>Discover</h1>
             <aside class="sidebar">
-
+                <div class="localStorage">
+                    <div id="visitMessage"></div>
+                </div>
                 <div class="chart-div">
                     <canvas id="myChart"></canvas>
                 </div>
@@ -69,9 +71,7 @@
                 </div>
                 
 
-                <div class="localStorage">
-                    <div id="visitMessage"></div>
-                </div>
+                
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1506160.040534153!2d-72.05841499795233!3d-36.889940736168924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses!2scl!4v1720150741624!5m2!1ses!2scl" width="500px%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
@@ -79,14 +79,67 @@
             </aside>
             <section class="main-content">
                 <h2>Imágenes Locales</h2>
-                <div class="image-gallery">
-                    <img data-src="image1.jpg" alt="Descripción de la imagen 1" class="lazyload">
-                    <img data-src="image2.jpg" alt="Descripción de la imagen 2" class="lazyload">
-                    <img data-src="image3.jpg" alt="Descripción de la imagen 3" class="lazyload">
-                    <img data-src="image4.jpg" alt="Descripción de la imagen 4" class="lazyload">
-                    <img data-src="image5.jpg" alt="Descripción de la imagen 5" class="lazyload">
-                    <img data-src="image6.jpg" alt="Descripción de la imagen 6" class="lazyload">
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                        <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                        <img src="images/hero-large.webp" alt="temple concepcion" width="1500" height="750">
+                    </picture>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
                 </div>
+
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                        <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                        <img src="images/hero-large.webp" alt="temple concepcion" width="1500" height="750">
+                    </picture>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                        <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                        <img src="images/hero-large.webp" alt="temple concepcion" width="1500" height="750">
+                    </picture>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                        <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                        <img src="images/hero-large.webp" alt="temple concepcion" width="1500" height="750">
+                    </picture>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                        <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                        <img src="images/hero-large.webp" alt="temple concepcion" width="1500" height="750">
+                    </picture>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                        <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                        <img src="images/hero-large.webp" alt="temple concepcion" width="1500" height="750">
+                    </picture>
+                    <p>Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+                
             </section>
         </div>
     </main>
@@ -109,6 +162,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
     <script src="scripts/discover.js"></script>
+    <script src="scripts/index.js"></script>
     
     
 </body>
