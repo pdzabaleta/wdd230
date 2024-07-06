@@ -528,7 +528,7 @@ main {
     /* width: 100%; */
     margin: 12vh auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     gap: 10px;
 
 
@@ -610,7 +610,7 @@ iframe {
     order: 1;
     display: grid;
     gap: 30px;
-    
+    width: 100%;
     background-color: gray;
 }
 
