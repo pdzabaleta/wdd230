@@ -62,5 +62,7 @@ nav {
 .container h1 {
     grid-column: 1/3;
 }
-
+.zoom-img:hover  {
+    transform: scale(1.05); /* Ajusta el valor según el efecto de zoom deseado */
+}
 }

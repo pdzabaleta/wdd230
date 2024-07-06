@@ -1,40 +1,65 @@
-
-const carousel = document.querySelector('.carousel');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-prevButton.addEventListener('click', () => {
-    carousel.scrollBy({ left: -220, behavior: 'smooth' }); // Ajusta el valor según el tamaño de tus tarjetas
+document.addEventListener('DOMContentLoaded', (event) => {
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    
+    // Verificar si carousel, prevButton y nextButton existen
+    if (carousel && prevButton && nextButton) {
+        prevButton.addEventListener('click', () => {
+            carousel.scrollBy({ left: -220, behavior: 'smooth' });
+        });
+    
+        nextButton.addEventListener('click', () => {
+            carousel.scrollBy({ left: 220, behavior: 'smooth' });
+        });
+    }
+    
+    // Verificar si existen los elementos de la sección carousel-stories y sus botones
+    const carouselS = document.querySelector('.carousel-stories');
+    const prevButtonS = document.querySelector('.prevS');
+    const nextButtonS = document.querySelector('.nextS');
+    
+    if (carouselS && prevButtonS && nextButtonS) {
+        prevButtonS.addEventListener('click', () => {
+            carouselS.scrollBy({ left: -220, behavior: 'smooth' });
+        });
+    
+        nextButtonS.addEventListener('click', () => {
+            carouselS.scrollBy({ left: 220, behavior: 'smooth' });
+        });
+    }
+    
+    // Función para obtener el año actual
+    function getCurrentYear() {
+        return new Date().getFullYear();
+    }
+    
+    // Función para obtener la última fecha de modificación
+    function getLastModified() {
+        return document.lastModified;
+    }
+    
+    // Verificar si existe el elemento con id 'year' antes de actualizar su contenido
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        yearElement.textContent = getCurrentYear();
+    }
+    
+    // Verificar si existe el elemento con id 'lastModified' antes de actualizar su contenido
+    const lastModifiedElement = document.getElementById('lastModified');
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = getLastModified();
+    }
+    
+    // Selector del botón de menú hamburguesa y navegación
+    const hamButton = document.querySelector('#menu');
+    const navigation = document.querySelector('.navigation');
+    
+    // Verificar si existe el botón de menú y la navegación antes de agregar el evento click
+    if (hamButton && navigation) {
+        hamButton.addEventListener('click', () => {
+            navigation.classList.toggle('open');
+            hamButton.classList.toggle('open');
+        });
+    }
 });
-nextButton.addEventListener('click', () => {
-    carousel.scrollBy({ left: 220, behavior: 'smooth' }); // Ajusta el valor según el tamaño de tus tarjetas
-});
-const carouselS = document.querySelector('.carousel-stories');
-const prevButtonS = document.querySelector('.prevS');
-const nextButtonS = document.querySelector('.nextS');
-prevButtonS.addEventListener('click', () => {
-    carouselS.scrollBy({ left: -220, behavior: 'smooth' }); // Ajusta el valor según el tamaño de tus tarjetas
-});
-nextButtonS.addEventListener('click', () => {
-    carouselS.scrollBy({ left: 220, behavior: 'smooth' }); // Ajusta el valor según el tamaño de tus tarjetas
-});
-
-function getCurrentYear() {
-    const currentYear = new Date().getFullYear();
-    return currentYear;
-}
-
-function getLastModified() {
-    return document.lastModified;
-}
-document.getElementById('year').textContent = getCurrentYear();
-document.getElementById('lastModified').textContent = getLastModified();
-
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
-
-
