@@ -1,4 +1,13 @@
 
+for (let i = 1; i <= 365; i++) {
+    let element = document.querySelector(`[id^='fc-dom-${i}']`);
+    if (element) {
+        element.style.color = 'blue'; // Cambia 'blue' por el color deseado
+    }
+}
+
+
+
 
 const ctx = document.getElementById('myChart');
 

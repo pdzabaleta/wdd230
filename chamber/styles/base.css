@@ -573,7 +573,8 @@ main {
     background-color: rgba(0, 0, 0, 0.123);
     border-radius: 8px;
     padding: 10px;
-    
+    /* color: white; */
+  
 }
 #calendar h2 { 
     font-size: 1rem;
