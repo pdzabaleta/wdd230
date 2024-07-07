@@ -535,7 +535,7 @@ main {
 
 
 }
-.container h2 {
+.container h1 {
     grid-column: 1/2;
     text-align: center;
     font-size: 2rem;
