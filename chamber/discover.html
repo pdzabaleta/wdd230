@@ -24,8 +24,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!-- calendar -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css'/>
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -65,9 +63,27 @@
                 <div class="chart-div">
                     <canvas id="myChart"></canvas>
                 </div>
-                <div class="calendar-div">
-                    <h3>Events</h3>
-                    <div id='calendar'></div>
+
+                <div class="events-container">
+                    <h2>Upcoming Events</h2>
+                    <div class="event">
+                        <h3>Business Networking Breakfast</h3>
+                        <p>Date: July 20, 2024</p>
+                        <p>Time: 8:00 AM - 10:00 AM</p>
+                        <p>Location: Chamber Hall</p>
+                    </div>
+                    <div class="event">
+                        <h3>Small Business Workshop</h3>
+                        <p>Date: August 5, 2024</p>
+                        <p>Time: 2:00 PM - 4:00 PM</p>
+                        <p>Location: Conference Room A</p>
+                    </div>
+                    <div class="event">
+                        <h3>Annual Chamber Gala</h3>
+                        <p>Date: September 15, 2024</p>
+                        <p>Time: 6:00 PM - 9:00 PM</p>
+                        <p>Location: Grand Ballroom</p>
+                    </div>
                 </div>
                 
 
@@ -172,7 +188,6 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js'></script>
     <script src="scripts/discover.js"></script>
     <script src="scripts/index.js"></script>
     
