@@ -282,13 +282,11 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* pointer-events: none; */
     padding: 12px;
     right: 0;
     left: 0;
     font-size: 1.125rem;
     font-weight: 500;
-    /* overflow: hidden; */
 }
 .card-definition h3 {
     color: white;
@@ -362,15 +360,12 @@ nav a:hover {
 
 .weather{
     width: 100%;
-    /* height: 100%; */
-    /* background-color: aqua; */
-    /* object-fit: cover; */
+
 }
 .weather h3{
     font-size: 1.4175rem; 
     margin: 10px 0;
     font-weight: 400;
-    /* background-color: #080808; */
 }
 
 
@@ -381,9 +376,7 @@ nav a:hover {
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    /* max-height: 100%; */
-    /* overflow: auto; */
-    /* background-color: yellow; */
+ 
 }
 
 .fake-weather p {
@@ -468,7 +461,6 @@ footer {
     transition: background-color 0.3s ease;
     display: flex;
     flex-direction: column;
-    /* justify-content:center; */
 
 }
 
@@ -519,13 +511,7 @@ footer p {
 }
 /* ///////////////////////////////////////////////////////DISCOVER.HTML//////////////////////////////////////////////////////////////// */
 
-main {
-    /* background-color: antiquewhite; */
-
-}
 .container {
-    /* background-color: #b70909; */
-    
     margin: 12vh auto;
     display: grid;
     grid-template-columns: auto;
@@ -547,7 +533,6 @@ main {
 .sidebar {
     order: 2;
     height: fit-content;
-    /* background-color: aqua; */
     display: grid;
     gap: 20px;
 
@@ -596,12 +581,15 @@ main {
 }
 
 .event h3 {
-    
+    font-size: 1.3rem; 
+    font-weight: 400;
     margin-top: 0;
     color: #444444;
 }
 
 .event p {
+    font-size: 1.125rem; 
+    font-weight: 400;
     margin: 5px 0;
     color: #4e4e4e;
 }
@@ -634,14 +622,12 @@ iframe {
     display: grid;
     gap: 30px;
     width: 100%;
-    /* background-color: gray; */
 }
 
 .hero {
     height: fit-content;
     width: 80%;
     margin: 0 auto;
-    /* background-color: antiquewhite; */
 }
 .hero h2 {
     font-size: 1.5rem; 
@@ -662,16 +648,13 @@ iframe {
 }
 .zoom-effect {
     overflow: hidden;
-    /* position: relative; */
     width: 100%;
     height: 50%;
-    /* background-color: blue; */
     border-radius: 8px;
 
 }
 
 .zoom-img {
-    /* object-fit: cover; */
     display: block;
     width: 100%;
     height: 100%;

@@ -41,31 +41,3 @@ const ctx = document.getElementById('myChart');
     
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        events: [
-            {
-                title: 'Business<br>Meeting',
-                start: '2024-07-05T10:00:00',
-                end: '2024-07-05T12:00:00'
-            },
-            {
-                title: 'Networking<br>Event',
-                start: '2024-07-10T14:00:00'
-            },
-            {
-                title: 'Training<br>Workshop',
-                start: '2024-07-15',
-                end: '2024-07-17'
-            }
-        ],
-        eventContent: function(arg) {
-            return { html: arg.event.title };
-        }
-    });
-
-    calendar.render();
-});
