@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+           --border:  2px solid gray;
+        }
+        caption{
+            caption-side: bottom;
+        }
+        table {
+            text-align: center;
+            border-collapse: collapse;
+        }
+        .checkmark {
+            color: green;
+        }
+        .x{
+            color: red;
+        }
+        
+        table {
+            margin: 0 auto;
+        }
+        thead tr th{
+            color: white;
+            background-color: black;
+            border: var(--border);
+            padding: 10px;
+        }
+        tbody tr td {
+            border-left: var(--border);
+            border-right: var(--border);
+            border-bottom: var(--border);
+            padding: 10px;
+        }
+        tbody tr > td:first-child{
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even) {
+            background-color: rgba(128, 128, 128, 0.64);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>New Table</caption>
+        <thead>
+            <tr >
+                <th colspan="4" >Table 1: Account Feature Comparison</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feature 1</td>
+                <td class="checkmark">&#10004;</td>
+                <td class="checkmark">&#10004;</td>
+                <td class="checkmark">&#10004;</td>
+            </tr>
+            <tr>
+                <td>Feature 2</td>
+                <td class="crossmark x">&#10008;</td>
+                <td class="checkmark">&#10004;</td>
+                <td class="checkmark">&#10004;</td>
+            </tr>
+            <tr>
+                <td>Feature 3</td>
+                <td class="crossmark x">&#10008;</td>
+                <td class="crossmark x">&#10008;</td>
+                <td class="checkmark">&#10004;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
