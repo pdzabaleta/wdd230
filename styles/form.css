@@ -156,7 +156,7 @@ main h1 {
 
 #formmessage {
     display: none;
-	visibility:none;
+	visibility:hidden;
 	margin: 10px;
 	padding: 0.5rem;
 	color: red;
@@ -170,6 +170,7 @@ main h1 {
 }
 
 #rangevalue {
+    display: block;
 	font-size: 2rem;
 	color: navy;
 }
