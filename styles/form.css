@@ -10,11 +10,13 @@
     --footer-heading-background-color: #bbb;
     --principal-background-color: white;
 }
+* {  box-sizing: border-box; }
 body {
     font-family: var(--font);
     background-color: var(--principal-background-color);
     margin: 0 auto;
     transition: background-color 0.3s ease;
+
 }
 header {
     background-color: var(--footer-heading-background-color);
@@ -98,14 +100,21 @@ nav a:hover {
 }
 
 main {
-    margin: 2% 1rem;
+    padding: 0 2%;
+    min-height: 20rem;
 }
 main h1 {
     text-align: center;
 }
 /* //////////////////////////Form styles //////////////////////////// */
+/* form {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #a90303;
+} */
 .wf1 fieldset {
     margin: 2rem 0;
+    /* background-color: aqua; */
     border-radius: 8px;
     border: 1px solid gray;
     padding: .5rem 2%;
@@ -120,6 +129,8 @@ main h1 {
     color: #a90303;
     font-size: .9rem;
 }
+
+
 .wf1 input[type="text"],
 .wf1 input[type="password"],
 .wf1 input[type="email"],
@@ -130,7 +141,7 @@ main h1 {
     border: 1px solid gray;
     border-radius: 5px;
     padding: .75rem;
-    color: black;
+    color: gray;
     width: 100%;
     max-width: 400px;
     appearance: none;
@@ -140,7 +151,7 @@ main h1 {
     max-width: 400px;
     margin: -1rem 4% 2rem 4%;
     padding: .5rem;
-    background-color: rgb(1, 35, 174);
+    background-color: rgb(20, 18, 166);
     color: white;
     border-radius: 5px;
     border: none;
