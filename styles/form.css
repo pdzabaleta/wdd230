@@ -117,7 +117,7 @@ main h1 {
 .wf1 label {
     display: block;
     padding: 2%;
-    color: red;
+    color: #a90303;
     font-size: .9rem;
 }
 .wf1 input[type="text"],
