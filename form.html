@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Pablo Zabaleta Profile" width="300" height="400">
+        <span>Pablo Zabaleta</span>
+        <img id="darkBtn" src="images/dark.svg" alt="dark mode">
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Log In</h1>
+        <div id="formmessage"></div>
+
+        <form action="record.html" method="get" class="wf1">
+            <fieldset>
+                <legend>Information</legend>
+                <label>Username* <input type="text" name="username" id="username" required></label> <!--Dentro de Label se puede clickear el nombre tambien-->
+                <label>Password* <input type="password" name="password" id="password" pattern="^(?!.*\s)[a-zA-Z0-9]{8,10}$" title="Must be between 8 and 10 alphanumeric characters" required></label> 
+                <label>Re-enter Your Password* <input type="password" name="password2" id="password2" pattern="^(?!.*\s)[a-zA-Z0-9]{8,10}$" title="Must be the same password than before" required></label> 
+                <label>Email* <input type="email" name="email" id="email" placeholder="example@byui.com" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address" required></label> 
+                <label>Rating 
+                    <div id="rangevalue">0</div> 
+                    <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+                </label>
+            </fieldset>
+
+
+            <input type="submit" value="Create my account">
+        </form>
+    </main>
+
+
+
+
+
+
+    <footer>
+        <p>©<span id="year"></span> Pablo Zabaleta, Chile <img src="images/chile-flag.webp" alt="Chilean flag" width="50" height="40"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        const kp1 = document.querySelector("#password");
+        const kp2 = document.querySelector("#password2");
+        const message = document.querySelector("#formmessage");
+            
+        kp2.addEventListener("focusout", checkSame);
+            
+        // This should be refactored.
+        function checkSame() {
+        	if (kp1.value !== kp2.value) {
+                // message.style.display = "block";
+        		message.textContent = "❗Key Phrases DO NOT MATCH!";
+                message.style.display = "block";
+        		message.style.visibility = "visible";
+        		kp2.style.backgroundColor = "#fff0f3";
+        		kp2.value = "";
+        		kp1.focus();
+        	} else {
+        		message.style.display = "none";
+        		kp2.style.backgroundColor = "#fff";
+        		kp2.style.color = "#000";
+        	}
+        }
+        const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("r");
+
+// RANGE event listener
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}
+    </script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

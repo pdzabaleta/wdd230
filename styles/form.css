@@ -1,0 +1,252 @@
+:root {
+    --nav-background-color: black;
+    --nav-hover-background-color: rgba(255, 255, 255, 0.2);
+
+    --font: 'Roboto', sans-serif;
+    --font-principal-color: #EDEDED;
+    --font-heading: #2e2e2e;
+
+    --heading-background-color: #4a4a4a;
+    --footer-heading-background-color: #bbb;
+    --principal-background-color: white;
+}
+body {
+    font-family: var(--font);
+    background-color: var(--principal-background-color);
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+header {
+    background-color: var(--footer-heading-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--font-heading);
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+#darkBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    width: 44px;
+    /* border: none ; */
+    /* background-color: none; */
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+header img {
+    width: 15vh;
+    height: auto;
+    box-shadow: 1px 2px 16px 3px rgba(0, 0, 0, 0.4);
+    margin-right: 5vw;
+    border-radius: 3px;
+}
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    text-decoration: underline;
+}
+
+#myButton::before {
+    content: "=";
+}
+
+#myButton.open::before {
+    content: "x";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+
+main {
+    margin: 2% 1rem;
+}
+main h1 {
+    text-align: center;
+}
+/* //////////////////////////Form styles //////////////////////////// */
+.wf1 fieldset {
+    margin: 2rem 0;
+    border-radius: 8px;
+    border: 1px solid gray;
+    padding: .5rem 2%;
+}
+.wf1 legend {
+    color: blue;
+    padding: 0 .5rem;
+}
+.wf1 label {
+    display: block;
+    padding: 2%;
+    color: red;
+    font-size: .9rem;
+}
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"],
+.wf1 input[type="password2"] {
+        
+    background-color:#eee;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.wf1 input[type="submit"] {
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 4% 2rem 4%;
+    padding: .5rem;
+    background-color: rgb(1, 35, 174);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.wf1 input:required {
+    border-left: 8px solid red;
+}
+.wf1 input:required:valid{
+    border-left: 8px solid green;
+}
+
+
+#formmessage {
+    display: none;
+	visibility:none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+
+/* css menu open */
+
+ul.menuLinks.open {
+    display: block;
+}
+@media (min-width: 769px) {
+   
+    nav ul {
+		display: flex;      
+ 
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
+    /* css for menu  */
+    #myButton {
+        display: none;
+    }
+
+}
+footer {
+    background-color: var(--footer-heading-background-color);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+
+}
+
+footer p {
+    margin: 0;
+    font-weight: bolder;
+    color: var(--font-heading);
+}
+
+footer img {
+    width: 3vw;
+    height: auto;
+}
+/* css for dark mode */
+body.dark {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+header.dark {
+    background-color:#1b1b1bc4; 
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+footer.dark {
+    background-color: #1b1b1bc4;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+footer.dark p {
+    color: #ffffff; /* Ajusta el color del texto para que sea visible */
+}
+/* ///////////////////// */
+
+.visits {
+    font-weight: bold;
+}
