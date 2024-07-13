@@ -65,4 +65,45 @@ nav {
 .zoom-img:hover  {
     transform: scale(1.05); /* Ajusta el valor según el efecto de zoom deseado */
 }
+
+
+/* ///////////////////////////////////////////////////////JOIN//////////////////////////////////////////////////////////////////////////// */
+
+
+.main-join {
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+.join-form {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 2%;
+    /* background-color: aquamarine;     */
+}
+.membership {
+    grid-column: 2/3;
+    background-color: gray;
+    height: 400px;
+    grid-row: 1/2;
+}
+.main-join h3 {
+    background-color: #f0f0f0;
+    grid-column: 1/3;
+}
+textarea {
+    resize: none; /* Desactiva el redimensionamiento */
+    width: 100%;
+    max-width: 400px;
+     /* Ajusta el ancho al 100% del contenedor */
+    height: 150px; /* Establece una altura fija */
+  }
+  .wf1 select {
+        
+    display: block;
+
+    appearance:auto;
+}
 }

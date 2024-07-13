@@ -147,7 +147,7 @@ main h1 {
     appearance: none;
 }
 .wf1 input[type="submit"] {
-    width: 96%;
+    width: 92%;
     max-width: 400px;
     margin: -1rem 4% 2rem 4%;
     padding: .5rem;

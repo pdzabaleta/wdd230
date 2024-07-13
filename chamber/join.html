@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Concepción Chamber Join</title>
+    <link rel="icon" href="images/icon.webp">
+    <meta name="description" content="Join Chamber of Commerce will provide a form to register to chamber of commerce">
+    <meta name="author" content="Pablo Zabaleta">
+    <!-- Facebook  Open Graph Meta Tags also works on twitter-->
+    <meta property="og:title" content="Greater Concepción Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Marketplace in Concepcion City.">
+    <meta property="og:image" content="https://github.com/pdzabaleta/wdd230/blob/main/chamber/images/facebook-image.jpg?raw=true">
+    <meta property="og:url" content="https://pdzabaleta.github.io/wdd230/chamber/index.html">
+    <!-- Olny twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greater Concepción Chamber">
+    <meta name="twitter:description" content="Marketplace in Concepcion City.">
+    <meta name="twitter:image" content="https://github.com/pdzabaleta/wdd230/blob/main/chamber/images/facebook-image.jpg?raw=true">
+    <meta name="twitter:url" content="https://pdzabaleta.github.io/wdd230/chamber/index.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css"> 
+</head>
+<body>
+    <header class="width">
+        <div class="logo">
+            <img src="images/icon.webp" alt="Logo de la empresa" width="44" height="44">
+        </div>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="siteplan.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>
+                <img src="images/icon-search.svg" alt="Buscar">
+            </button>
+        </div>
+        
+    </header>
+    
+    <main class="main-join width">
+        
+        <div class="join-form">
+            <h1>Join to Chamber of Commerce</h1>
+            <form action="thankyou.html" method="get" class="wf1">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name <span class="required" title="Required">*</span><input type="text" name="fname" id="fname" required></label> <!--Dentro de Label se puede clickear el nombre tambien-->
+                    <label>Last Name <span class="required" title="Required">*</span><input type="text" name="lname" id="lname" required></label> 
+                    <label>Phone <input type="tel" name="phone" id="phone" placeholder="+56991234567"></label> 
+                    <label>Email <span class="required" title="Required">*</span><input type="email" name="email" id="email" placeholder="example@byui.com" required></label> 
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Business information</legend>
+                    <label>Business/Organization's name <span class="required" title="Required">*</span><input type="text" name="bname" id="bname" required></label>
+                    <label>Title or Position <span class="required" title="Required">*</span><input type="text" name="pname" id="pname" pattern="[A-Za-z\s-]{7,}" title="Only alphabetic characters, hyphens, and spaces are allowed. Minimum 7 characters." placeholder="e.g., Senior Manager" required ></label>
+                    
+                    <label for="membership">Membership Level<span class="required" title="Required">*</span>
+                        <select id="membership" name="membership" required>
+                          <option value="" disabled selected>Select one membership &#9662;</option>
+                          <option value="np">NP Membership (Non-Profit Organizations, No Fee)</option>
+                          <option value="bronze">Bronze Membership</option>
+                          <option value="silver">Silver Membership</option>
+                          <option value="gold">Gold Membership</option>
+                        </select>
+                      </label>
+                    <div>Business description</div>
+                    <textarea name="bdescription" id="bsecription" rows="4" cols="50"></textarea>
+                    <input type="hidden" name="timestamp" id="timestamp"><!--  estampa de tiempo -->
+
+                </fieldset>
+    
+                <input type="submit" value="Subscribe to Chamber of Commerce">
+            </form>
+        </div>
+        
+        <div class="membership">
+            <h2>Membership</h2>
+            <h2>holaa</h2>
+        </div>
+        <h3>holAAA
+
+        </h3>
+    </main>
+    <footer class="width">
+        <div class="footer-extra">
+            <div class="footer-logo">
+                <img src="images/icon.webp" alt="Chamber Logo" loading="lazy">
+            </div>
+            <div class="footer-info">
+                <p>Chamber of Commerce, Concepción</p>
+                <p>Contact: info@chamberconcepcion.com</p>
+                <p>Address: 123 Main Street, Concepción, Chile</p>
+            </div>
+        </div>
+        <p>©<span id="year"></span> Pablo Zabaleta WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    
+    <script src="scripts/index.js"></script>
+</body>
+</html>
