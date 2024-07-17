@@ -679,12 +679,69 @@ iframe {
 }
 .membership {
     grid-row: 2/3;
-    background-color: gray;
-    height: 200px;
+    /* background-color: gray; */
+    /* height: 200px; */
+    padding-top: 2%;
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.membership h2 {
+    /* background-color: aqua; */
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 .main-join h3 {
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     grid-column: 1/2;
+}
+.level {
+    width: 100%;
+    height: 20vh;
+    /* margin: 0; */
+    /* padding: 10px; */
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+.level img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    /* z-index: -1; */
+}
+.level h3 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    /* color: white; */
+    
+    font-size: 2.5rem; 
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: .1em;
+    
+}
+.membership .level:nth-child(2) h3 {
+    /* Estilos para el primer h3 (Free) */
+    background-color: rgba(217, 217, 217, 0.512);
+}
+
+.membership .level:nth-child(3) h3 {
+    /* Estilos para el segundo h3 (Bronze) */
+    background-color: #c86331cd;
+}
+
+.membership .level:nth-child(4) h3 {
+    /* Estilos para el tercer h3 (Silver) */
+    background-color: rgba(128, 128, 128, 0.707);
+}
+
+.membership .level:nth-child(5) h3 {
+    /* Estilos para el cuarto h3 (Gold) */
+    background-color: rgba(255, 217, 0, 0.681);
 }
 .wf1 fieldset {
     margin: 2rem 0;
