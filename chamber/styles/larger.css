@@ -91,7 +91,15 @@ nav {
     padding-top: 4%;
 
 }
-
+.membership-info h3 {
+    font-size: 1.5rem;
+}
+.membership-info p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 0 2%;
+    font-weight: 400;
+}
 .main-join h3 {
     /* background-color: #f0f0f0; */
     grid-column: 1/3;

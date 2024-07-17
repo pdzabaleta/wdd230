@@ -690,56 +690,64 @@ iframe {
     font-size: 2em;
     margin: 0.67em 0;
 }
-.main-join h3 {
-    /* background-color: #f0f0f0; */
-    grid-column: 1/2;
-}
+
 .level {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
+    /* max-height: fit-content; */
     /* margin: 0; */
     /* padding: 10px; */
     position: relative;
-    /* background-color: antiquewhite; */
+    background-color: antiquewhite;
 }
 .level img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: relative;
+    display: block;
     /* z-index: -1; */
 }
-.level h3 {
+.membership-info {
     position: absolute;
     z-index: 1;
     width: 100%;
     height: 100%;
     text-align: center;
     align-content: center;
+    display: block;
     /* color: white; */
     
-    font-size: 2.5rem; 
-    font-weight: 600;
-    line-height: 100%;
-    letter-spacing: .1em;
+    /* font-size: 2.5rem;  */
+    /* font-weight: 600; */
+    /* line-height: 100%; */
+    /* letter-spacing: .1em; */
     
 }
-.membership .level:nth-child(2) h3 {
+.membership-info h3 {
+    font-size: 1rem;
+    font-weight: 700;
+     letter-spacing: .2em;
+}
+.membership-info p {
+    font-size: .9rem;
+}
+.membership .level:nth-child(2) .membership-info {
     /* Estilos para el primer h3 (Free) */
-    background-color: rgba(217, 217, 217, 0.512);
+    background-color: rgba(217, 217, 217, 0.698);
 }
 
-.membership .level:nth-child(3) h3 {
+.membership .level:nth-child(3) .membership-info {
     /* Estilos para el segundo h3 (Bronze) */
-    background-color: #c86331cd;
+    background-color: #e58758cd;
 }
 
-.membership .level:nth-child(4) h3 {
+.membership .level:nth-child(4) .membership-info {
     /* Estilos para el tercer h3 (Silver) */
-    background-color: rgba(128, 128, 128, 0.707);
+    background-color: rgba(161, 156, 156, 0.79);
 }
 
-.membership .level:nth-child(5) h3 {
+.membership .level:nth-child(5) .membership-info {
     /* Estilos para el cuarto h3 (Gold) */
     background-color: rgba(255, 217, 0, 0.681);
 }
