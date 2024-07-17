@@ -62,4 +62,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
             hamButton.classList.toggle('open');
         });
     }
+
+    var storedTimestamp = localStorage.getItem('timestamp');
+
+    if (!storedTimestamp) {
+        // Si no hay una estampa de tiempo almacenada, crea una nueva
+        var currentDate = new Date();
+        var isoTimestamp = currentDate.toISOString();
+
+        // Almacena la estampa de tiempo en localStorage
+        localStorage.setItem('timestamp', isoTimestamp);
+    }
 });
