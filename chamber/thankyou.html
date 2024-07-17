@@ -1,8 +1,82 @@
-<label for="membership">Membership Level
-    <select id="membership" name="membership">
-      <option value="np">NP Membership (Non-Profit Organizations, No Fee)</option>
-      <option value="bronze">Bronze Membership</option>
-      <option value="silver">Silver Membership</option>
-      <option value="gold">Gold Membership</option>
-    </select>
-</label>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Concepción Chamber Join</title>
+    <link rel="icon" href="images/icon.webp">
+    <meta name="description" content="Join Chamber of Commerce will provide a form to register to chamber of commerce">
+    <meta name="author" content="Pablo Zabaleta">
+    <!-- Facebook  Open Graph Meta Tags also works on twitter-->
+    <meta property="og:title" content="Greater Concepción Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Marketplace in Concepcion City.">
+    <meta property="og:image" content="https://github.com/pdzabaleta/wdd230/blob/main/chamber/images/facebook-image.jpg?raw=true">
+    <meta property="og:url" content="https://pdzabaleta.github.io/wdd230/chamber/index.html">
+    <!-- Olny twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greater Concepción Chamber">
+    <meta name="twitter:description" content="Marketplace in Concepcion City.">
+    <meta name="twitter:image" content="https://github.com/pdzabaleta/wdd230/blob/main/chamber/images/facebook-image.jpg?raw=true">
+    <meta name="twitter:url" content="https://pdzabaleta.github.io/wdd230/chamber/index.html">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css"> 
+</head>
+<body>
+    <header class="width">
+        <div class="logo">
+            <img src="images/icon.webp" alt="Logo de la empresa" width="44" height="44">
+        </div>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="siteplan.html">Events</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="search" placeholder="Search">
+            <button>
+                <img src="images/icon-search.svg" alt="Buscar">
+            </button>
+        </div>
+        
+    </header>
+    
+    <main class="width">
+        <div class="thankyou">
+            <h1>Thank You!</h1>
+            <p>Please check your email for further instructions on how to complete your membership setup.</p>
+            <hr>    
+            <a href="index.html" role="button">Continue to homepage</a>
+        </div>
+    </main>
+    <footer class="width">
+        <div class="footer-extra">
+            <div class="footer-logo">
+                <img src="images/icon.webp" alt="Chamber Logo" loading="lazy">
+            </div>
+            <div class="footer-info">
+                <p>Chamber of Commerce, Concepción</p>
+                <p>Contact: info@chamberconcepcion.com</p>
+                <p>Address: 123 Main Street, Concepción, Chile</p>
+            </div>
+        </div>
+        <p>©<span id="year"></span> Pablo Zabaleta WDD230 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+    
+    <script src="scripts/index.js"></script>
+</body>
+</html>

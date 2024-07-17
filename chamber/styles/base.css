@@ -839,3 +839,45 @@ textarea {
     margin-top: 50px;
     font-size: 1.5rem;
   }
+
+  /* //////////////////////////////////////////////THANKYOU///////////////////////////////////////////////////////// */
+
+  .thankyou {
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    height: 50vh;
+  }
+  .thankyou h1 {
+    margin: 0.67em 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .thankyou p {
+    text-align: center;
+    margin: 0.67em auto;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 300;
+
+  }
+  .thankyou hr {
+    width: 90%;
+    border: 1px solid gray;
+  }
+  .thankyou a {
+    margin: 1.67em 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .2rem;
+    padding: 10px;
+    color: white;
+    background-color: #007bff;
+  }
