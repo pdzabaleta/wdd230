@@ -1,0 +1,99 @@
+{
+    "weeks":[
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title":"Holygrail"
+                },
+                {
+                    "url": "media-query.html",
+                    "title":"Media Query"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title":"Design"
+                },
+                {
+                    "url": "https://codepen.io/pdzabaleta/pen/zYQWeNw",
+                    "title":"Hamburguer Menu"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title":"BOM Top 10"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title":"Landscape"
+                },
+                {
+                    "url": "week03/lazyload.html",
+                    "title":"Lazyload"
+                },
+                {
+                    "url": "week03/responsive-images.html",
+                    "title":"Responsive Images"
+                },
+                {
+                    "url": "week03/bom.html",
+                    "title":"Bom localStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/pdzabaleta/pen/jOjOQrQ",
+                    "title":"CSS Pseudo-classes"
+                },
+                {
+                    "url": "week04/images/combinator-exercises.png",
+                    "title":"Combinator Exercises"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title":"Table"
+                },
+                {
+                    "url": "Form-start/index.html",
+                    "title":"Form"
+                }
+                
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/pdzabaleta/pen/Yzowrdd",
+                    "title":"CodePen Marker pseudo-element"
+                },
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title":"JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title":"The Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title":"Weather API"
+                }
+                
+            ]
+        }
+    ]
+}
