@@ -1,0 +1,28 @@
+{
+    "familyName": "Jhonson famyly",
+    "dateFamilyInWard": "12/05/2001",
+    "numberInFamily": 4,
+    "visited":false,
+    "members": [
+        {
+            "name":"John Doe",
+            "gender": "male",
+            "birthdate": "11/28/1965"
+        },
+        {
+            "name":"Jane Doe",
+            "gender": "female",
+            "birthdate": "07/30/1972"
+        },
+        {
+            "name":"Charles Doe",
+            "gender": "male",
+            "birthdate": "08/17/1997"
+        },
+        {
+            "name":"Daniel Doe",
+            "gender": "male",
+            "birthdate": "12/05/2001"
+        }
+    ]
+}
