@@ -22,4 +22,19 @@
         display: none;
     }
 
+    .week {
+        flex-direction: row;
+        
+        
+    }
+    .week-link {
+        display: flex;
+    }
+    .week-link a {
+        display: flex;
+        text-align: left;
+    }
+    .week-link a:hover {
+        color: blue;
+    }
 }

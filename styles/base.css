@@ -10,7 +10,9 @@
     --footer-heading-background-color: #bbb;
     --principal-background-color: white;
 }
-
+* {
+    box-sizing: border-box;
+}
 /* Layout for small screens */
 @media (max-width: 768px) {
     .grid-container {
@@ -171,20 +173,46 @@ ul.menuLinks.open {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 10px;
+    padding: 2%;
     text-align: left;
     margin-top: 2vh;
+    box-sizing: border-box;
+    width: 100%;
+    /* width: 100%; */
 }
 
 .card {
     border-radius: 8px;
-    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    /* background-color: #4D5B97; */
+    overflow: hidden;    
     box-shadow: 1px 2px 16px 3px rgba(0, 0, 0, 0.4);
 }
-.card ul li a {
-    text-decoration: underline;
-    color: black;
+/* /////////////////////////////////////////STYLES FOR WEEKS ///////////////////////////////////////////////////////// */
+
+#weeks-container {
+    padding: 2%;
+    width: 100%;
 }
+.week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.week-link a {
+    display: grid;
+    margin: 0 auto;
+    width: fit-content;
+    padding-left: 5px;
+    color: #080808;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
 .information {
     text-align: center;
 }
