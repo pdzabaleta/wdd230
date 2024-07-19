@@ -876,3 +876,43 @@ textarea {
     color: white;
     background-color: #007bff;
   }
+  /* ////////////////////////////////////////////DIRECTORY//////////////////////////////////////////////// */
+
+.directory-main {
+  /* background-color: antiquewhite; */
+}
+.directory-main h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  /* background-color: #007bff;    */
+}
+.view {
+  display: flex;
+  justify-content: flex-end;
+}
+.grid,
+.list {
+  /* background-color: aqua; */
+}
+.grid,
+.list {
+  margin: 5px;
+  border:.1rem solid grey ;
+  border-radius: .2rem;
+}
+.grid span,
+.list span{
+  display: block;
+  color: #007bff;
+  font-size: 2.2rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+#directory {
+    background-color: antiquewhite;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
