@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pAddress.textContent = name.address;
             pPhone.textContent = name.phone;
             aURL.href = name.url;
+            aURL.setAttribute('target', '_blank');
             aURL.textContent = name.url;
             mLevel.textContent = name.membershipLevel;
             category.textContent = `${name.category} `;

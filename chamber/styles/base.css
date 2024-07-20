@@ -891,20 +891,17 @@ textarea {
   display: flex;
   justify-content: flex-end;
 }
-.grid,
-.list {
-  /* background-color: aqua; */
-}
+
 .grid,
 .list {
   margin: 5px;
-  border:.1rem solid grey ;
+  border:.1rem solid rgb(3 104 213) ;
   border-radius: .2rem;
 }
 .grid span,
 .list span{
   display: block;
-  color: #007bff;
+  color: rgb(3 104 213);
   /* height: 20px; */
   font-size: 2.2rem;
   font-weight: 100;
@@ -949,7 +946,7 @@ textarea {
     margin: 2%;
     padding: 10px;
     height: auto;
-    box-shadow: 0px 10px 10px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 10px -8px rgba(0,0,0,0.75);
     border-radius: .2em;
 }
 .business img {
@@ -983,7 +980,7 @@ textarea {
     text-decoration: none;
 }
 .aURL:visited {
-    color: green;
+    color: #025d02;
 }
 .aURL:hover {
     color: purple;
