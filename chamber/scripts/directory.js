@@ -62,11 +62,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const directory = document.querySelector('#directory');
 
     if (grid && list) {
+        grid.style.backgroundColor = '#EDFBFA';
         list.addEventListener('click',  () =>{
             directory.classList.toggle('list-active');
+
+            // Cambia el color de fondo de los botones
+            grid.style.backgroundColor = '';
+            list.style.backgroundColor = '#EDFBFA';
+            
         });
         grid.addEventListener('click', () => {
             directory.classList.remove('list-active');
+
+            // Cambia el color de fondo de los botones
+            list.style.backgroundColor = '';
+            grid.style.backgroundColor = '#EDFBFA';
         });
     }
 });

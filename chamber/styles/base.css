@@ -898,6 +898,7 @@ textarea {
   border:.1rem solid rgb(3 104 213) ;
   border-radius: .2rem;
 }
+
 .grid span,
 .list span{
   display: block;
