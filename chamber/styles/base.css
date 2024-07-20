@@ -982,6 +982,15 @@ textarea {
 .aURL {
     text-decoration: none;
 }
-.aURL:checked {
-    color: #000000;
+.aURL:visited {
+    color: green;
+}
+.aURL:hover {
+    color: purple;
+}
+.mLevel {
+    font-weight: 350;
+}
+.rating {
+    font-weight: 350;
 }
