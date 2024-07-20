@@ -128,4 +128,15 @@ textarea {
     font-size: 1.25rem;
 
   }
+
+/* ///////////////////////////////////DIRECTORY//////////////////////// */
+#directory {
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#directory.list-active{
+    
+    gap: 0;
+}
+
 }
