@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rating.textContent = `(${name.rating})`;
 
             category.appendChild(rating);
-            textContent.append(pName, pAddress, pPhone, aURL, mLevel, category);
+            textContent.append(pName, category, pAddress, pPhone, aURL, mLevel,);
             nameElement.append(img, textContent);  
 
             container.appendChild(nameElement);

@@ -972,8 +972,16 @@ textarea {
 
 .textContent {
     margin-top: 20px;
+    font-size: .9rem;
+    font-weight: 300;
 }
 .pName {
     font-size: 1.5rem;
     font-weight: 350;
+}
+.aURL {
+    text-decoration: none;
+}
+.aURL:checked {
+    color: #000000;
 }
