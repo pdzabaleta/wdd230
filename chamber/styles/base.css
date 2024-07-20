@@ -193,6 +193,7 @@ nav a:hover {
     background-color: #d2d2d2; 
     border-radius: 20px;
     cursor: pointer;
+    color: #000;
     font-size: 2vh;  
     font-weight: 500;
     line-height: 150%;
