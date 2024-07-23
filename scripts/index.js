@@ -38,8 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   localStorage.setItem("user-visit-count", numVisits);
 
 
-
-
+//////////////////////////////////////////////////////WEATHER////////////////////////////////////////////
   const currentTemp = document.querySelector('#weather');
   const weatherIcon = document.querySelector('#weather-icon');
   const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-36.72&lon=-73.11&appid=fbd84acb3840d4382467a74d7a6700e1&units=metric';

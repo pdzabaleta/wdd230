@@ -62,8 +62,115 @@ document.addEventListener('DOMContentLoaded', (event) => {
             hamButton.classList.toggle('open');
         });
     }
-///////////////////////////////////////////TIMESTAMP////////////////////////////////////////////////
+    ///////////////////////////////////////////TIMESTAMP////////////////////////////////////////////////
+
+    const timestampElement = document.getElementById('timestamp');
+    if (timestampElement) {
+        timestampElement.value = new Date().toISOString();
+    } else {
+        console.error("Timestamp element not found.");
+    }
 
 
-    document.getElementById('timestamp').value = new Date().toISOString();
+
+    ///////////////////////////WEATHER///////////////////////
+
+    const weather = document.querySelector('#weather');
+    const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-36.72&lon=-73.11&appid=fbd84acb3840d4382467a74d7a6700e1&units=metric';
+    const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=-36.72&lon=-73.11&appid=fbd84acb3840d4382467a74d7a6700e1&units=metric';
+    let weatherAtNoon = [];
+    
+    async function apiFetch(url) {
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json();
+                displayResults(data);
+            } else {
+                throw Error(await response.text());
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    
+    function displayResults(data) {
+        const img = document.createElement('img');
+        const temperature = document.createElement('span');
+        const currentW = document.createElement('p');
+        const forecastDescription = document.createElement('div');
+        const forecasth3 = document.createElement('h3');
+        const forecast1 = document.createElement('span'); //br 
+    
+        img.classList.add('weather-img');
+        temperature.classList.add('weather-temperature');
+        currentW.classList.add('currentW');
+        forecastDescription.classList.add('forecast-container');
+        forecasth3.classList.add('forecasth3');
+        forecast1.classList.add('forecast1');
+    
+        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+        const desc = data.weather[0].description;
+        img.setAttribute('src', `${iconsrc}`);
+        img.setAttribute('alt', `${desc}`);
+        img.setAttribute('loading', 'lazy');
+        temperature.textContent = `The temperature in ${data.name} is ${data.main.temp}°C`;
+        currentW.textContent = `Current Weather: ${desc}`;
+        forecasth3.textContent = `Forecast (three days)`;
+        forecast1.innerHTML = `${weatherAtNoon[0].dt} Temp: ${weatherAtNoon[0].temp} weather: ${weatherAtNoon[0].weather}<br>
+                               ${weatherAtNoon[1].dt} Temp: ${weatherAtNoon[1].temp}°C weather: ${weatherAtNoon[1].weather}<br>
+                               ${weatherAtNoon[2].dt} Temp: ${weatherAtNoon[2].temp}°C weather: ${weatherAtNoon[2].weather}`;
+        
+        forecastDescription.append(forecasth3, forecast1);
+        weather.append(img, temperature, currentW,forecastDescription);
+        
+    
+        // Usa weatherAtNoon aquí
+        console.log('Weather at noon:', weatherAtNoon);
+    }
+    
+    async function apiForecast(forecastURL) {
+        try {
+            const response = await fetch(forecastURL);
+            if (response.ok) {
+                const data = await response.json();
+                weatherAtNoon = displayResultsForecast(data);
+                // Llama a apiFetch después de haber actualizado weatherAtNoon
+                apiFetch(url);
+            } else {
+                throw Error(await response.text());
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    
+    function displayResultsForecast(data) {
+        const weatherAtNoon = [];
+        data.list.forEach(item => {
+            const dateText = item.dt_txt;
+            if (dateText.includes('12:00:00')) {
+                // dt calculator
+
+                const timestamp = item.dt; 
+                const date = new Date(timestamp * 1000);
+                const year = date.getFullYear();
+                const month = date.getMonth() + 1; // Los meses son 0-11, así que se añade 1
+                const day = date.getDate();
+
+                const formattedDate = `${day}/${month}/${year}`;
+                weatherAtNoon.push({
+                    dt: formattedDate,
+                    temp: item.main.temp,
+                    weather: item.weather[0].description,
+                });
+            }
+        });
+        return weatherAtNoon;
+    }
+    
+    // Primero llama a apiForecast
+    apiForecast(forecastURL);
+    
+ 
 });
