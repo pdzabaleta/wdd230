@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const cardh3 = document.createElement('h3');
             const cardp = document.createElement('p');
             const contact = document.createElement('div');
-            const cardMail = document.createElement('p');
+            const cardAddres = document.createElement('p');
             const cardPhone = document.createElement('p');
             const rating = document.createElement('div');
             
@@ -113,15 +113,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
             cardh3.classList.add('cardh3');
             cardp.classList.add('cardp');
             contact.classList.add('contact');
-            cardMail.classList.add('cardMail');
+            cardAddres.classList.add('cardAddres');
             cardPhone.classList.add('cardPhone');
             rating.classList.add('rating');
             
             cardh3.textContent = business.name;
-            
+            cardp.textContent = business.description;
+            cardAddres.textContent = business.address;
+            cardPhone.textContent = business.phone;
 
 
-            contact.append(cardMail, cardPhone);
+            contact.append(cardAddres, cardPhone);
             rcardDefinition.append(cardh3, cardp, contact, rating);
             cardS.appendChild(rcardDefinition);
             carouselStories.appendChild(cardS);

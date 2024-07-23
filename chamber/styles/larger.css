@@ -10,7 +10,18 @@
     margin-right: 10px;
     }
 
+    .carousel,
+    .carousel-stories  {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Para un desplazamiento suave en dispositivos móviles */
+}
 
+    .card {
+        margin-right: 10px; 
+    }
     .search {
     display: block;
     position: relative;

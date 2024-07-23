@@ -239,7 +239,6 @@ nav a:hover {
     width: 100%;/* Ajusta según sea necesario */
     margin: 0 auto;  
     margin-right: 0;
-    /* overflow: hidden; */
 }
 .carousel-group {
     display: none;
@@ -247,7 +246,7 @@ nav a:hover {
 .carousel,
 .carousel-stories  {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; /* Para un desplazamiento suave en dispositivos móviles */
@@ -257,13 +256,17 @@ nav a:hover {
     flex: 0 0 auto;
     height: 470px; /* Ajusta el ancho de las tarjetas según sea necesario */
     width: 353px;
-    margin-right: 10px; /* Espaciado entre las tarjetas */
+    margin: 0 auto;/* Espaciado entre las tarjetas */
+    margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start; /*no se para que es*/
     overflow: hidden;
     position: relative; 
-    background-color: gainsboro;
+    background-image: url(../images/ad.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .cardS {
     margin-top: 10px;
@@ -331,16 +334,16 @@ nav a:hover {
 .rating-definition p {
     text-align: justify;
     font-size: 1.125rem; 
-    font-weight: 400;
+    font-weight: 380;
     line-height: 150%;
-    color: #ad0000;
+    color: #000000;
     
 }
 .rating-definition h3 {
     align-self: center;
-    font-size: 1.4175rem; 
-    font-weight: 400;
-    color: #a60000;
+    font-size: 2.5rem; 
+    font-weight: 300;
+    color: #000000;
     
 }
 .contact {
@@ -439,8 +442,11 @@ nav a:hover {
         font-size: 1.3rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
         font-weight: 400; /* Ajusta el peso de la fuente si es necesario */
     }
+    .carousel {
+        display: flex;
+    }
     .carousel-section {
-        padding-left: 20px;
+        padding-left: 0;
     }
     .principal-text h1 {
         font-size: 1.5rem;
