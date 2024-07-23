@@ -333,13 +333,14 @@ nav a:hover {
     font-size: 1.125rem; 
     font-weight: 400;
     line-height: 150%;
-    color: #282828;
+    color: #ad0000;
+    
 }
 .rating-definition h3 {
     align-self: center;
     font-size: 1.4175rem; 
     font-weight: 400;
-    color: #000000;
+    color: #a60000;
     
 }
 .contact {

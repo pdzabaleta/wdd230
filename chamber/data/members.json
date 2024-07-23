@@ -1,5 +1,5 @@
 {
-    "business" : [
+    "business": [
         {
             "name": "Cinemark",
             "address": "Barros Arana 1068, Concepción",
@@ -8,7 +8,8 @@
             "icon": "images/cinemark.webp",
             "membershipLevel": "Gold",
             "category": "Cinema",
-            "rating": "4.5"
+            "rating": "4.5",
+            "description": "Enjoy the latest blockbuster movies at Cinemark - your go-to cinema for entertainment."
         },
         {
             "name": "Mallplaza",
@@ -17,8 +18,9 @@
             "url": "https://www.mallplaza.cl",
             "icon": "images/mallplaza.svg",
             "membershipLevel": "Silver",
-            "category": "Shopping Mall",    
-            "rating": "4.0"
+            "category": "Shopping Mall",
+            "rating": "4.0",
+            "description": "Discover a world of shopping and dining at Mallplaza - your ultimate shopping destination."
         },
         {
             "name": "McDonald's",
@@ -28,7 +30,8 @@
             "icon": "images/mcdonalds.svg",
             "membershipLevel": "Bronze",
             "category": "Fast Food",
-            "rating": "3.8"
+            "rating": "3.8",
+            "description": "Grab a quick and tasty meal at McDonald's - fast food at its finest."
         },
         {
             "name": "Coca Cola",
@@ -38,7 +41,8 @@
             "icon": "images/cocacola.png",
             "membershipLevel": "Gold",
             "category": "Beverage",
-            "rating": "4.9"
+            "rating": "4.9",
+            "description": "Refresh yourself with Coca Cola - the perfect beverage for any occasion."
         },
         {
             "name": "Easy",
@@ -48,7 +52,8 @@
             "icon": "images/easy.png",
             "membershipLevel": "Silver",
             "category": "Home Improvement",
-            "rating": "4.2"
+            "rating": "4.2",
+            "description": "Find everything you need for your home improvement projects at Easy."
         },
         {
             "name": "Paris",
@@ -58,7 +63,8 @@
             "icon": "images/paris.svg",
             "membershipLevel": "Bronze",
             "category": "Department Store",
-            "rating": "3.5"
+            "rating": "3.5",
+            "description": "Explore a wide range of products at Paris - your local department store."
         },
         {
             "name": "Jumbo",
@@ -68,8 +74,8 @@
             "icon": "images/jumbo.png",
             "membershipLevel": "Gold",
             "category": "Supermarket",
-            "rating": "4.7"
+            "rating": "4.7",
+            "description": "Shop for groceries and more at Jumbo - your go-to supermarket for quality and variety."
         }
-        
     ]
 }

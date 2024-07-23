@@ -71,6 +71,68 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.error("Timestamp element not found.");
     }
 
+    ///////////////////////////////CARD JSON DEFINITION /////////////////////
+    const directoryURL = "https://pdzabaleta.github.io/wdd230/chamber/data/members.json";
+    const carouselStories = document.querySelector('.carousel-stories');
+
+    async function getAd(url) {
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data.business);
+                displayAd(data.business);
+            }
+            else {
+                throw Error(await response.text());
+            }
+        } catch(error) {
+            console.log(error);
+        }
+    }
+
+    getAd(directoryURL);
+    function displayAd(business) {
+
+        const filteredBusinesses = business.filter(business => 
+            business.membershipLevel === 'Silver' || business.membershipLevel === 'Gold'
+        );
+
+        filteredBusinesses.forEach((business) => {
+            const cardS = document.createElement('div');
+            const rcardDefinition = document.createElement('div');
+            const cardh3 = document.createElement('h3');
+            const cardp = document.createElement('p');
+            const contact = document.createElement('div');
+            const cardMail = document.createElement('p');
+            const cardPhone = document.createElement('p');
+            const rating = document.createElement('div');
+            
+            cardS.classList.add('card', 'cardS');
+            rcardDefinition.classList.add('rating-definition', 'card-definition');
+            cardh3.classList.add('cardh3');
+            cardp.classList.add('cardp');
+            contact.classList.add('contact');
+            cardMail.classList.add('cardMail');
+            cardPhone.classList.add('cardPhone');
+            rating.classList.add('rating');
+            
+            cardh3.textContent = business.name;
+            
+
+
+            contact.append(cardMail, cardPhone);
+            rcardDefinition.append(cardh3, cardp, contact, rating);
+            cardS.appendChild(rcardDefinition);
+            carouselStories.appendChild(cardS);
+            
+            
+            
+            
+    
+        });
+    }    
+    
 
 
     ///////////////////////////WEATHER///////////////////////
