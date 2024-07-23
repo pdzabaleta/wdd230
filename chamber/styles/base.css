@@ -101,9 +101,7 @@ nav a:hover {
     border: none;
     font-size: 1.5em;
     cursor: pointer;
-    /* position: absolute;
-    right: 10px;
-    top: 10px; */
+
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 768px) {
