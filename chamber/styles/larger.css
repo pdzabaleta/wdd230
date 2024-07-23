@@ -1,7 +1,16 @@
 @media (min-width: 768px) {
 
+    .promo-banner {
+        height: 10vh;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .close-banner {
 
-    
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
     .event-section {
         grid-template-columns: 1fr 2fr;
     }

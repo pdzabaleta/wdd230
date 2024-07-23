@@ -79,6 +79,32 @@ nav a:hover {
 .search button img {
     padding-left: 5px; /* Ajusta el valor según la distancia deseada */
 }
+.promo-banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #ffeb3b; /* Color de fondo */
+    color: #000; /* Color del texto */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: .9rem;
+    height: fit-content;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    z-index: 1000; /* Asegúrate de que el banner esté sobre otros elementos */
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    /* position: absolute;
+    right: 10px;
+    top: 10px; */
+}
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 768px) {
     .navigation {

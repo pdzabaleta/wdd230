@@ -1,4 +1,31 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    ////////////////////////////////BUTTON JOIN//////////////////////
+    const joinButton = document.querySelector('.principal button');
+    if (joinButton) {
+        joinButton.addEventListener('click', () => {
+            window.location.href = 'join.html';
+        });
+    }
+    ///////////////////////////////BANNER////////////////////////////////
+    const banner = document.getElementById('promo-banner');
+    const closeButton = document.getElementById('close-banner');
+
+    function showBannerIfNeeded() {
+        const today = new Date();
+        const day = today.getDay(); // 0 = Domingo, 1 = Lunes, ..., 6 = Sábado
+
+        // Mostrar el banner solo si es Lunes (1), Martes (2) o Miércoles (3)
+        if (!(day === 1 || day === 2 || day === 3)) {
+            banner.style.display = 'none';
+        }
+    }
+
+    closeButton.addEventListener('click', function() {
+        banner.style.display = 'none';
+    });
+
+    showBannerIfNeeded();
+    ////////////////////////////////CAROUSEL/////////////////////////////
     const carousel = document.querySelector('.carousel');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
@@ -67,8 +94,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const timestampElement = document.getElementById('timestamp');
     if (timestampElement) {
         timestampElement.value = new Date().toISOString();
-    } else {
-        console.error("Timestamp element not found.");
     }
 
     ///////////////////////////////CARD JSON DEFINITION /////////////////////
