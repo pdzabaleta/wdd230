@@ -90,7 +90,7 @@ nav a:hover {
     bottom: 0;
     width: 100%;
     font-size: .9rem;
-    height: fit-content;
+    min-height: 10vh;
     text-align: center;
     border-bottom: 1px solid #ccc;
     z-index: 1000; /* Asegúrate de que el banner esté sobre otros elementos */
