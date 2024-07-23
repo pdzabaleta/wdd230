@@ -9,22 +9,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     ///////////////////////////////BANNER////////////////////////////////
     const banner = document.getElementById('promo-banner');
     const closeButton = document.getElementById('close-banner');
-
-    function showBannerIfNeeded() {
-        const today = new Date();
-        const day = today.getDay(); // 0 = Domingo, 1 = Lunes, ..., 6 = Sábado
-
-        // Mostrar el banner solo si es Lunes (1), Martes (2) o Miércoles (3)
-        if (!(day === 1 || day === 2 || day === 3)) {
-            banner.style.display = 'none';
+    if (banner) {
+        function showBannerIfNeeded() {
+            const today = new Date();
+            const day = today.getDay(); // 0 = Domingo, 1 = Lunes, ..., 6 = Sábado
+    
+            // Mostrar el banner solo si es Lunes (1), Martes (2) o Miércoles (3)
+            if (!(day === 1 || day === 2 || day === 3)) {
+                banner.style.display = 'none';
+            }
         }
+    
+        closeButton.addEventListener('click', function() {
+            banner.style.display = 'none';
+        });
+    
+    
+        showBannerIfNeeded();
+
     }
 
-    closeButton.addEventListener('click', function() {
-        banner.style.display = 'none';
-    });
-
-    showBannerIfNeeded();
+    
     ////////////////////////////////CAROUSEL/////////////////////////////
     const carousel = document.querySelector('.carousel');
     const prevButton = document.querySelector('.prev');

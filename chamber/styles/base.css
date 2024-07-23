@@ -805,12 +805,16 @@ iframe {
     color: blue;
     padding: 0 .5rem;
 }
+#description-label {
+    padding-bottom: .2rem;
+}
 .wf1 label{
     display: block;
     /* margin: 1rem 0; */
     font-size: .9rem;
     padding: 2%;
 }
+
 .wf1 {
     width: 100%;
 }
