@@ -53,32 +53,7 @@ nav a:hover {
     margin-left: 10px;
     align-items: center;
 }
-.search {
-    display: none;
-}
-.search input {
-    position: relative;
-    height: 100%;
-    width: 15vw;
-    border-radius: 20px;
-    border: 1px solid #d2d2d2;
-    padding: 0 16px;
-    line-height: 40px;
-} 
-.search button {
-    position: absolute;
-    cursor: pointer;
-    height: fit-content;
-    background: none;
-    border: none;
-    border-left: 1px solid #d2d2d2;
-    top: 50%;
-    right: 10%; /* Ajusta la distancia del borde derecho según sea necesario */
-    transform: translateY(-50%);
-}
-.search button img {
-    padding-left: 5px; /* Ajusta el valor según la distancia deseada */
-}
+
 .promo-banner {
     display: flex;
     align-items: center; 
@@ -498,8 +473,8 @@ nav a:hover {
     }
     .rating-definition h3 {
         align-self: center;
-        font-size: 1.1rem; 
-        font-weight: 400;
+        font-size: 2.5rem; 
+        font-weight: 350;
         color: #000000;
         
     }
@@ -578,7 +553,7 @@ footer p {
     font-size: 2rem;
     line-height: 100%;
     letter-spacing: -.02em;
-    font-weight: 400;
+    font-weight: 300;
 }
 /* /////////////////SIDEBAR////////////////////////// */
 .sidebar {
@@ -728,6 +703,9 @@ iframe {
 
     /* height: 400px;    */
 }
+.join-form h1 {
+    font-weight: 300;
+}
 .membership {
     grid-row: 2/3;
     /* background-color: gray; */
@@ -739,6 +717,7 @@ iframe {
 .membership h2 {
     /* background-color: aqua; */
     font-size: 2em;
+    font-weight: 300;
     margin: 0.67em 0;
 }
 
@@ -749,11 +728,15 @@ iframe {
     /* margin: 0; */
     /* padding: 10px; */
     position: relative;
-    background-color: antiquewhite;
+    border-radius: 10px;
+
+    /* background-color: antiquewhite; */
 }
+
 .level img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     position: relative;
     display: block;
@@ -778,8 +761,17 @@ iframe {
 .membership-info p {
     font-size: .9rem;
 }
+
+.membership .level:nth-child(2) img {
+    /* Estilos para la primera imagen */
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+
+}
 .membership .level:nth-child(2) .membership-info {
     /* Estilos para el primer h3 (Free) */
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     background-color: rgba(217, 217, 217, 0.698);
 }
 
@@ -796,6 +788,12 @@ iframe {
 .membership .level:nth-child(5) .membership-info {
     /* Estilos para el cuarto h3 (Gold) */
     background-color: rgba(255, 217, 0, 0.681);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+.membership .level:nth-child(5) img {
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 .wf1 fieldset {
     margin: 2rem 0;
@@ -850,7 +848,8 @@ textarea {
 
   }
   .wf1 input[type="submit"] {
-    /* display: block; */
+    font-size: .9rem;
+    min-height: 44px;
     width: 92%;
     max-width: 400px;
     margin: -1rem 4% 2rem 4%;
@@ -943,9 +942,14 @@ textarea {
 
 .grid,
 .list {
-  margin: 5px;
-  border:.1rem solid rgb(3 104 213) ;
-  border-radius: .2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    min-height: 44px;
+    min-width: 44px;
+    border:.1rem solid rgb(3 104 213) ;
+    border-radius: .2rem;
 }
 
 .grid span,
@@ -955,6 +959,7 @@ textarea {
   /* height: 20px; */
   font-size: 2.2rem;
   font-weight: 100;
+  /* margin: 0 auto; */
   cursor: pointer;
 }
 
