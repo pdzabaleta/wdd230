@@ -67,9 +67,15 @@ nav {
 .principal img {
     height: 60vh;
 }
-
+.principal-text h1 {
+    font-size: 2rem;
+}
 .principal-text p {
     display: block;
+}
+.principal-text button:hover{
+    background-color: #a5a5a5; 
+  
 }
 /* ///////////////////////////////////////////////////////DISCOVER.HTML//////////////////////////////////////////////////////////////// */
 

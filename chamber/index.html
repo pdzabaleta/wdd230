@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greater Concepción Chamber</title>
     <link rel="icon" href="images/icon.webp">
-    <meta name="description" content="Chamber site for marketplace in concepcion city helps to grow locar business">
+    <meta name="description" content="Chamber site for marketplace in concepcion city helps to grow local businesses">
     <meta name="author" content="Pablo Zabaleta">
     <!-- Facebook  Open Graph Meta Tags also works on twitter-->
     <meta property="og:title" content="Greater Concepción Chamber of Commerce">
@@ -20,10 +20,10 @@
     <meta name="twitter:image" content="https://github.com/pdzabaleta/wdd230/blob/main/chamber/images/facebook-image.jpg?raw=true">
     <meta name="twitter:url" content="https://pdzabaleta.github.io/wdd230/chamber/index.html">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -33,7 +33,7 @@
 <body>
     <header class="width">
         <div class="logo">
-            <img src="images/icon.webp" alt="Logo de la empresa" width="44" height="44">
+            <img src="images/icon.webp" alt="chamber of commerce icon" width="44" height="44">
         </div>
         <button id="menu"></button>
         <nav>
@@ -44,12 +44,12 @@
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
-        <div class="search">
+        <!-- <div class="search">
             <input type="text" placeholder="Search">
             <button>
                 <img src="images/icon-search.svg" alt="Buscar">
             </button>
-        </div>
+        </div> -->
         
     </header>
     
@@ -59,7 +59,12 @@
             <button id="close-banner" class="close-banner">×</button>
         </div>
         <section class="principal">
-            <img src="images/principal-image.webp" alt="abstract image" width="300">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/principal-image-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/principal-image-medium.webp">
+                <img src="images/principal-image-large.webp" alt="abstract image" width="300">
+            </picture>
+            
             <div class="principal-text">
                 <h1>Greater Concepción Chamber of Commerce</h1>
                 <p>Empowering businesses in Greater Concepción with innovative solutions, strategic connections, and unparalleled support. Join us to drive economic growth and create a thriving community together.</p>
