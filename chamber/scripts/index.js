@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
-                // console.log(data.business);
                 displayAd(data.business);
             }
             else {
@@ -224,10 +223,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
         forecastDescription.append(forecasth3, forecast1);
         weather.append(img, temperature, currentW,forecastDescription);
-        
-    
-        // Usa weatherAtNoon aquí
-        // console.log('Weather at noon:', weatherAtNoon);
     }
     
     async function apiForecast(forecastURL) {

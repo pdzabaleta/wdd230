@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
-                // console.table(data.business);
                 displayBusiness(data.business);
             }
     }

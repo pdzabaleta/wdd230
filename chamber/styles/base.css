@@ -1,7 +1,8 @@
 @font-face {
-    font-family: 'Sohne'; /* Nombre de la fuente */
-    src: url('fonts/sohne-font-family') format('opentype'); /* Ruta a la fuente */
-    /* Puedes agregar más estilos para diferentes pesos o estilos si tienes archivos adicionales de la fuente */
+    font-family: 'Sohne';
+    src: url('/chamber/fonts/sohne-font-family/TestSohne-Buch-BF663d89cd32e6a.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 * {
     padding: 0;
@@ -46,7 +47,12 @@ nav a {
     letter-spacing: .0025em;
     font-weight: 400;
 }
-
+.active {
+    text-decoration: underline;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 800;
+}
 
 .logo {
     display: flex;
