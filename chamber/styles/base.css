@@ -48,9 +48,7 @@ nav a {
     font-weight: 400;
 }
 
-nav a:hover {
-	text-decoration:underline;
-}
+
 .logo {
     display: flex;
     margin-left: 10px;
@@ -109,11 +107,9 @@ nav a:hover {
     .navigation a {
         padding: 10px 0;
         text-decoration: underline;
-        /* background-color: aqua; */
     }
     
     .navigation a:hover {
-        /* background-color: #b70909; */
         color: #333;
         font-weight: bold;
     }
@@ -144,25 +140,17 @@ nav a:hover {
     display: flex;
     justify-content: center;
     position: relative;
-    /* background-color: aqua; */
     height: 72vh;
     width: 90vw;
     margin: 6vh auto;
     z-index: 1; 
 }
-.principal img:hover {
-    transform: scale(1.01); /* Ajusta el valor para un mayor o menor acercamiento */
-    box-shadow: 0px 44px 41px 13px rgba(230, 189, 217, 0.761);
 
-}
 .principal img {
     width: 95vw;
     height: 72vh;
     border-radius: 8px;
-    /* position: absolute; */
-    /* top: 0; */
     transition: transform 0.9s ease, box-shadow 0.9s ease;
-    /* z-index: 1; */
     object-fit: cover;
 
 }
@@ -235,7 +223,6 @@ nav a:hover {
 }  
 .carousel-button h2 {
     font-size: 1.9rem; 
-    /* white-space: nowrap; */
     font-weight: 400;
 }
 
@@ -306,9 +293,6 @@ nav a:hover {
     color: white;
 
 }
-.card img:hover {
-    transform: scale(1.05); /* Zoom al pasar el mouse */
-}
 
 
 
@@ -333,7 +317,6 @@ nav a:hover {
 
 .rating-definition {
     align-items: center;
-    /* height: 800px; */
 }
 .rating-definition p {
     text-align: justify;
@@ -411,7 +394,6 @@ nav a:hover {
 .forecast1 {
     font-size: 1rem;
 }
-/* Estilos ficticios para el clima */
 
 .event {
     display: flex;
@@ -452,10 +434,7 @@ nav a:hover {
     .carousel-section {
         padding-left: 0;
     }
-    /* .principal-text h1 {
-        font-size: 1.5rem;
-        
-    } */
+
     .card {
         height: 50vh; /* Ajusta el ancho de las tarjetas según sea necesario */
         width: 80vw;
@@ -693,7 +672,6 @@ iframe {
 /* //////////////////////////////JOIN////////////////////////////////////////////////////////////////////////////// */
 
 .main-join {
-    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -703,22 +681,17 @@ iframe {
     grid-column: 1/2;
     grid-row: 1/2;
     padding: 2%;
-
-    /* height: 400px;    */
 }
 .join-form h1 {
     font-weight: 300;
 }
 .membership {
     grid-row: 2/3;
-    /* background-color: gray; */
-    /* height: 200px; */
     padding-top: 2%;
     display: grid;
     grid-template-rows: auto auto;
 }
 .membership h2 {
-    /* background-color: aqua; */
     font-size: 2em;
     font-weight: 300;
     margin: 0.67em 0;
@@ -727,23 +700,16 @@ iframe {
 .level {
     width: 100%;
     height: 30vh;
-    /* max-height: fit-content; */
-    /* margin: 0; */
-    /* padding: 10px; */
     position: relative;
     border-radius: 10px;
-
-    /* background-color: antiquewhite; */
 }
 
 .level img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     position: relative;
     display: block;
-    /* z-index: -1; */
 }
 .membership-info {
     position: absolute;
@@ -813,7 +779,6 @@ iframe {
 }
 .wf1 label{
     display: block;
-    /* margin: 1rem 0; */
     font-size: .9rem;
     padding: 2%;
 }
@@ -895,7 +860,6 @@ textarea {
   /* //////////////////////////////////////////////THANKYOU///////////////////////////////////////////////////////// */
 
   .thankyou {
-    /* background-color: gray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -940,7 +904,6 @@ textarea {
   text-align: center;
   font-size: 2rem;
   font-weight: 300;
-  /* background-color: #007bff;    */
 }
 .view {
   display: flex;
@@ -963,16 +926,13 @@ textarea {
 .list span{
   display: block;
   color: rgb(3 104 213);
-  /* height: 20px; */
   font-size: 2.2rem;
   font-weight: 100;
-  /* margin: 0 auto; */
   cursor: pointer;
 }
 
 #directory {
     transition: all 0.5s ease;
-    /* background-color: antiquewhite; */
     display: grid;
     grid-template-columns: auto;
 
@@ -982,7 +942,6 @@ textarea {
     transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
-    /* background-color: aqua; */
 }
 
 
@@ -1004,7 +963,6 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* background-color: #007bff; */
     margin: 2%;
     padding: 10px;
     height: auto;
@@ -1016,14 +974,12 @@ textarea {
     margin: 0 auto;
     width: 30%;
     height: auto;
-    /* object-fit: contain; */
 }
 .business:nth-child(1) img,
 .business:nth-child(2) img,
 .business:nth-child(4) img {
     width: 80%;
     height: auto;
-    /* object-fit: contain; */
 }
 .list-active .textContent {
     margin-top: 0;
@@ -1044,9 +1000,7 @@ textarea {
 .aURL:visited {
     color: #025d02;
 }
-.aURL:hover {
-    color: purple;
-}
+
 .mLevel {
     font-weight: 350;
 }

@@ -52,7 +52,9 @@ nav {
     z-index: 3;
 }
 
-
+nav a:hover {
+	text-decoration:underline;
+}
 
 
 #menu {
@@ -66,6 +68,11 @@ nav {
 }
 .principal img {
     height: 60vh;
+}
+.principal img:hover {
+    transform: scale(1.01); /* Ajusta el valor para un mayor o menor acercamiento */
+    box-shadow: 0px 44px 41px 13px rgba(230, 189, 217, 0.761);
+
 }
 .principal-text h1 {
     font-size: 2rem;
@@ -168,5 +175,7 @@ textarea {
     box-shadow: 0px 10px 10px 3px rgba(0,0,0,0.75);
 
 }
-
+.aURL:hover {
+    color: purple;
+}
 }
