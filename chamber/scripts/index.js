@@ -6,6 +6,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             window.location.href = 'join.html';
         });
     }
+    /////////////////////////////ICON REDIRECTION/////////////////////
+    const icon = document.querySelector('.logo');
+    if (icon) {
+        icon.addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    }
     ///////////////////////////////BANNER////////////////////////////////
     const banner = document.getElementById('promo-banner');
     const closeButton = document.getElementById('close-banner');
@@ -110,7 +117,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
-                console.log(data.business);
+                // console.log(data.business);
                 displayAd(data.business);
             }
             else {
@@ -220,7 +227,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
     
         // Usa weatherAtNoon aquí
-        console.log('Weather at noon:', weatherAtNoon);
+        // console.log('Weather at noon:', weatherAtNoon);
     }
     
     async function apiForecast(forecastURL) {
